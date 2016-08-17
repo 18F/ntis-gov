@@ -111,6 +111,7 @@ GEM
     rdiscount (2.1.8)
     redcarpet (3.3.3)
     rouge (1.10.1)
+    rsync (1.0.9)
     safe_yaml (1.0.4)
     sass (3.4.22)
     sawyer (0.7.0)
@@ -128,6 +129,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  rsync (~> 1.0, >= 1.0.9)
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
