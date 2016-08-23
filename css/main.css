@@ -41,14 +41,15 @@ p {
   padding: 218px 0 36px 0;
 }*/
 nav {
-  width: 640px;
-  margin-left: 480px;
+  width: 960px;
+  padding-top: 30px;
+  margin: 0 auto;
 }
 header {
   min-height: 600px;
   max-width: 960px;
   margin: 0 auto;
-  padding: 90px 10px 60px 10px;
+  padding: 60px 10px;
 }
 section, footer {
   max-width: 960px;
@@ -61,15 +62,31 @@ footer {
 address {
 
 }
-nav a {
+nav ul {
+  margin: 0 0 0 480px;
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+nav ul li {
+  display: -webkit-flex;
+  display: flex;
+  width: 33%;
+}
+nav ul li a {
   width: 140px;
-  padding: 0 10px;
   text-decoration: none;
-  color: #fff;
-  float: left;
+  padding: 10px 0;
+  margin: 0 10px;
+  color: #000;
+  display: block;
+  align-items: stretch;
+  border-bottom: 1px solid #000;
 }
 header h1 {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 header h1 img {
   height: 60px;
@@ -110,6 +127,16 @@ header p {
 
 
 @media (max-width: 800px) {
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    margin-left: 0;
+    flex-direction: column;
+  }
+  nav ul li, nav ul li a {
+    width: 100%;
+  }
   header, section, footer {
     padding-left: 20px;
     padding-right: 20px;
