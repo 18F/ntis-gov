@@ -34,6 +34,13 @@ p {
   -moz-hyphens: auto;
   hyphens: auto;
 }
+a {
+  text-decoration: none;
+  color: #02bfe7;
+}
+a:hover {
+  border-bottom: 1px solid #02bfe7;
+}
 /*header h3 {
   font-size: 30px;
   font-weight: 300;
@@ -56,12 +63,35 @@ section, footer {
   margin: 0 auto;
   padding: 0 20px;
 }
+section {
+
+}
 footer {
 
 }
 address {
 
 }
+/* Structure */
+.container-fluid {
+  width: 100%;
+  height: auto;
+}
+.hero {
+  background: transparent url(../images/tile-blue.png) repeat;
+}
+.program-info {
+  background-color: #112e51;
+  padding-bottom: 180px;
+  height: auto;
+  overflow: hidden;
+}
+.short-divider {
+  width: 60px;
+  border-top: 2px solid #9bdaf1;
+  margin: 30px 0 60px 170px;
+}
+
 nav ul {
   margin: 0 0 0 480px;
   list-style: none;
@@ -105,25 +135,12 @@ header p {
 }
 .program-info h3 {
   color: #9bdaf1;
-  max-width: 300px;
+  max-width: 200px;
+  display: block;
+  margin-top: 120px;
+
 }
-/* Structure */
-.container-fluid {
-  width: 100%;
-  height: auto;
-}
-.hero {
-  background: transparent url(../images/tile-blue.png) repeat;
-}
-.program-info {
-  background-color: #112e51;
-  padding: 60px 0;
-}
-.short-divider {
-  width: 60px;
-  border-top: 2px solid #9bdaf1;
-  margin: 60px 0 60px 170px;
-}
+
 
 
 @media (max-width: 800px) {
