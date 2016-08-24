@@ -5,11 +5,6 @@ body {
   background: url(../images/mountain-bg.jpg) no-repeat center -500px fixed;
 }
 h1 {
-  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
-  font-size: 60px;
-  line-height: 60px;
-  text-transform: uppercase;
-  letter-spacing: -4px;
   margin: 0;
   padding: 0;
 }
@@ -20,19 +15,23 @@ h2 {
   width: 940px;
   margin: 90px auto;
 }
-h3, h4 {
+h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   margin: 0;
 }
+h4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
 p {
   font-size: 14px;
   margin: 0;
   padding: 0;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
 }
 a {
   text-decoration: none;
@@ -53,10 +52,10 @@ nav {
   margin: 0 auto;
 }
 header {
-  min-height: 600px;
+  min-height: 400px;
   max-width: 960px;
   margin: 0 auto;
-  padding: 60px 10px;
+  padding: 90px 10px;
 }
 section, footer {
   max-width: 960px;
@@ -88,27 +87,26 @@ address {
 }
 .short-divider {
   width: 60px;
-  border-top: 2px solid #9bdaf1;
-  margin: 30px 0 60px 170px;
+  border-top: 1px dotted #9bdaf1;
+  margin: 120px 0 0;
 }
 
 nav ul {
   margin: 0 0 0 480px;
   list-style: none;
-  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   padding: 0;
+  font-size: 14px;
 }
 nav ul li {
-  display: -webkit-flex;
   display: flex;
   width: 33%;
 }
 nav ul li a {
   width: 140px;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 10px 0 6px;
   margin: 0 10px;
   color: #000;
   display: block;
@@ -119,12 +117,11 @@ header h1 {
   margin-bottom: 30px;
 }
 header h1 img {
-  height: 60px;
+  height: 50px;
 }
 header p {
-  font: 400 1.8em/1.5em 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  letter-spacing: -.03em;
-  /*font: 36px/46px 'Crimson Text', Georgia, serif;*/
+  font: 400 28px/40px 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -.02em;
   max-width: 620px;
 }
 .program-info p {
@@ -132,13 +129,13 @@ header p {
   color: #fff;
   max-width: 640px;
   margin-left: 170px;
+  padding-bottom: 72px;
 }
-.program-info h3 {
+.program-info h4 {
   color: #9bdaf1;
   max-width: 200px;
   display: block;
-  margin-top: 120px;
-
+  margin-bottom: 60px;
 }
 
 
@@ -165,7 +162,7 @@ header p {
   .program-info p {
     margin-left: 0;
   }
-  .short-divider {
+  /*.short-divider {
     margin-left: 0;
-  }
+  }*/
 }
