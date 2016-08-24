@@ -158,10 +158,10 @@ header p {
     padding-left: 20px;
     padding-right: 20px;
   }
-  header p {
+  /*header p {
     font: 400 36px/42px 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 0;
-  }
+  }*/
   .program-info p {
     margin-left: 0;
   }
