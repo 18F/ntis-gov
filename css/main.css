@@ -41,7 +41,7 @@ strong {
 }
 nav {
   width: 960px;
-  padding-top: 30px;
+  padding-top: 40px;
   margin: 0 auto;
 }
 header {
@@ -90,6 +90,30 @@ footer .seal {
 .container-fluid {
   width: 100%;
   height: auto;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 4px 0;
+  border-bottom: 1px solid #999;
+}
+.usa-site-header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4px 0;
+  height: auto;
+}
+.usa-site-header p {
+  font-size: 11px;
+}
+.usa-disclaimer {
+  float: left;
+}
+.usa-site-header .usa-disclaimer-stage {
+  float: right;
 }
 .hero {
   background: transparent url(../images/tile-blue.png) repeat;
@@ -201,14 +225,14 @@ footer .seal img {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /*header p {
-    font: 400 36px/42px 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    letter-spacing: 0;
-  }*/
   .program-info p {
     margin-left: 0;
   }
-  /*.short-divider {
-    margin-left: 0;
-  }*/
+
+}
+@media (max-width: 400px) {
+  .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
+    float: none;
+    padding-left: 10px;
+  }
 }
