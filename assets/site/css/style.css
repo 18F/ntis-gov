@@ -7,3 +7,19 @@
   font-family: sans-serif;
   font-size: 30px;
 }
+
+.ntis-disclaimer-official {
+  display: none;
+  float: right; }
+  @media screen and (min-width: 1201px) {
+    .ntis-disclaimer-official {
+      display: block; } }
+
+.ntis-disclaimer-official {
+  padding-right: 3rem; }
+
+.ntis-disclaimer-stage {
+  padding-left: 2rem; }
+  @media screen and (min-width: 600px) {
+    .ntis-disclaimer-stage {
+      padding-left: 3rem; } }
