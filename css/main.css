@@ -2,9 +2,9 @@ body {
   font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url(../images/mountain-bg.jpg) no-repeat center -500px fixed;
+  background: url(../images/mountain-bg.jpg) no-repeat center -550px fixed;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
 }
@@ -167,7 +167,7 @@ header p {
   color: #fff;
   max-width: 640px;
   margin-left: 170px;
-  padding-bottom: 72px;
+  padding-bottom: 30px;
 }
 .program-info p a:hover {
     border-bottom: 1px solid #02bfe7;
@@ -179,6 +179,24 @@ header p {
   display: block;
   margin-top: 20px;
   margin-bottom: 60px;
+}
+.program-info .run-in-head {
+  font: 400 12px/36px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: #dce4ef;
+}
+.program-info .button {
+  padding: 12px 60px;
+  border: 1px solid #02bfe7;
+  font: 24px/30px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-left: 170px;
+  margin-bottom: 90px;
+  display: inline-block;
+  letter-spacing: .05em;
 }
 address p {
   margin-bottom: 12px;
@@ -210,7 +228,7 @@ footer .seal img {
   margin-top: 12px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   nav {
     width: 100%;
   }
@@ -228,9 +246,11 @@ footer .seal img {
   .program-info p {
     margin-left: 0;
   }
-
+  .program-info .button {
+    margin-left: 0;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
     float: none;
     padding-left: 10px;
