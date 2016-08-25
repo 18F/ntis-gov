@@ -1,0 +1,97 @@
+.usa-disclaimer-stage {
+  /*display: none;*/
+  float: right;
+}
+  @media screen and (min-width: 1201px) {
+    .usa-disclaimer-stage {
+      display: block; } }
+
+.usa-disclaimer-stage {
+  padding-right: 3rem; }
+
+.usa-disclaimer-official {
+  padding-left: 2rem; }
+  @media screen and (min-width: 600px) {
+    .usa-disclaimer-official {
+      padding-left: 3rem; } }
+
+.usa-site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #aeb0b5;
+  width: 100%;
+  z-index: 1; }
+  .usa-site-header a {
+    border-bottom: none; }
+  .usa-site-header .usa-site-navbar {
+    margin-top: 4px; }
+    @media screen and (min-width: 850px) {
+      .usa-site-header .usa-site-navbar {
+        margin: 2.7rem 0 1rem;
+        height: 6rem; } }
+    .usa-site-header .usa-site-navbar .logo {
+      float: left;
+      text-align: center;
+      padding-top: 1.3rem;
+      width: 70%; }
+      @media screen and (min-width: 850px) {
+        .usa-site-header .usa-site-navbar .logo {
+          padding-top: 0;
+          padding-left: 3rem;
+          text-align: left;
+          width: auto; } }
+      .usa-site-header .usa-site-navbar .logo a {
+        color: #5b616b; }
+        .usa-site-header .usa-site-navbar .logo a:hover {
+          color: #323a45;
+          text-decoration: none; }
+    .usa-site-header .usa-site-navbar h1 {
+      margin: 0;
+      font-size: 1.5rem; }
+      @media screen and (min-width: 850px) {
+        .usa-site-header .usa-site-navbar h1 {
+          display: block;
+          font-size: 2rem;
+          margin-top: .9rem; } }
+    .usa-site-header .usa-site-navbar .usa-button-list {
+      /*float: right;*/
+      display: none;
+      margin-top: -5px; }
+      @media screen and (min-width: 850px) {
+        .usa-site-header .usa-site-navbar .usa-button-list {
+          display: block;
+          padding-right: 3rem; } }
+      .usa-site-header .usa-site-navbar .usa-button-list li {
+        display: inline;
+        font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+        .usa-site-header .usa-site-navbar .usa-button-list li:last-child .usa-button {
+          margin-right: 0; }
+  .usa-site-header .disclaimer {
+    padding: .5rem 2rem;
+    color: white;
+    text-align: center;
+    font-size: 1.36rem;
+    /*border-bottom: 1px solid #616161;*/
+    font-weight: 100; }
+    .usa-site-header .disclaimer .us-official {
+      margin: 0; }
+    .usa-site-header .disclaimer .stage {
+      /*float: none;*/
+      display: block;
+      padding-top: 5px; }
+      .usa-site-header .disclaimer .stage a {
+        text-decoration: underline; }
+    @media screen and (min-width: 850px) {
+      .usa-site-header .disclaimer .us-official {
+        margin-left: 177px; }
+      .usa-site-header .disclaimer .stage {
+        /*float: right;*/
+        padding: 0; } }
+
+/* additional formatting */
+.usa-site-header {
+  margin: 0 auto;
+  font: 400 11px/18px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
