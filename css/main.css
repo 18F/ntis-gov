@@ -151,6 +151,9 @@ nav ul li a {
   align-items: stretch;
   border-bottom: 1px solid #000;
 }
+nav ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
 header h1 {
   margin-bottom: 30px;
 }
