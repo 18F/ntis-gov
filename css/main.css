@@ -229,6 +229,10 @@ footer .seal img {
 }
 
 @media (max-width: 768px) {
+  .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
+    float: none;
+    padding-left: 10px;
+  }
   nav {
     width: 100%;
   }
