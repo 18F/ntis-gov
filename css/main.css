@@ -1,5 +1,5 @@
 body {
-  font-family: 'Libre Franklin', 'Work Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: url(../images/mountain-bg.jpg) no-repeat center -500px fixed;
@@ -21,7 +21,7 @@ h3 {
   line-height: 30px;
 }
 h4 {
-  font-weight: 400;
+  font-weight: bold;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: .0825em;
@@ -36,15 +36,9 @@ a {
   text-decoration: none;
   color: #02bfe7;
 }
-a:hover {
-  border-bottom: 1px solid #02bfe7;
+strong {
+  font-weight: 700;
 }
-/*header h3 {
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 218px 0 36px 0;
-}*/
 nav {
   width: 960px;
   padding-top: 30px;
@@ -65,12 +59,19 @@ section {
 
 }
 footer {
-  margin: 120px 0 300px;
+  margin: 90px auto 360px auto;
+  max-width: 960px;
 }
 address {
-
+  font-style: normal;
+  width: 280px;
+  padding: 30px 10px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
-/* Typographi */
+
+/* Typographic */
+
 .opentype {
   -webkit-font-feature-settings: "liga", "dlig";
   -moz-font-feature-settings: "liga=1, dlig=1";
@@ -79,7 +80,9 @@ address {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
 }
+
 /* Structure */
+
 .container-fluid {
   width: 100%;
   height: auto;
@@ -138,15 +141,41 @@ header p {
   margin-left: 170px;
   padding-bottom: 72px;
 }
+.program-info p a:hover {
+    border-bottom: 1px solid #02bfe7;
+}
 .program-info h3, .program-info h4 {
   color: #9bdaf1;
+  font-weight: 400;
   max-width: 200px;
   display: block;
   margin-top: 20px;
   margin-bottom: 60px;
 }
-
-
+address p {
+  margin-bottom: 12px;
+}
+address a {
+  color: #0071bc;
+}
+address .social-icon {
+  display: inline-block;
+  width: 34px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #9bdaf1;
+  padding-left: 6px;
+  margin-bottom: 30px;
+}
+address a:hover.social-icon {
+  text-decoration: none;
+  background-color: #02bfe7;
+}
+address .short-divider {
+  width: 60px;
+  border-top: 1px solid #9bdaf1;
+  margin: 12px 0;
+}
 
 @media (max-width: 800px) {
   nav {
