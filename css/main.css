@@ -62,14 +62,18 @@ footer {
   margin: 90px auto 360px auto;
   max-width: 960px;
 }
-address {
+address, footer .seal {
   font-style: normal;
   width: 280px;
-  padding: 30px 10px;
+  padding: 20px 10px 0;
   line-height: 20px;
   background-color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid #02bfe7;
 }
-
+footer .seal {
+  margin-top: 60px;
+  padding-bottom: 20px;
+}
 /* Typographic */
 
 .opentype {
@@ -175,6 +179,11 @@ address .short-divider {
   width: 60px;
   border-top: 1px solid #9bdaf1;
   margin: 12px 0;
+}
+footer .seal img {
+  width: 90px;
+  height: 90px;
+  margin-top: 12px;
 }
 
 @media (max-width: 800px) {
