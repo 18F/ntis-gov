@@ -235,7 +235,7 @@ footer .seal img {
   margin-top: 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
     float: none;
     padding-left: 10px;
@@ -254,10 +254,10 @@ footer .seal img {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .program-info p {
+  .program-info p, .program-info h5 {
     margin-left: 0;
   }
-  .program-info .button {
+  .program-info a.button {
     margin-left: 0;
   }
 }
