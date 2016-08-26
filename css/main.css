@@ -45,7 +45,7 @@ nav {
   margin: 0 auto;
 }
 header {
-  min-height: 400px;
+  min-height: 360px;
   max-width: 960px;
   margin: 0 auto;
   padding: 60px 10px;
@@ -151,6 +151,9 @@ nav ul li a {
   align-items: stretch;
   border-bottom: 1px solid #000;
 }
+nav ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
 header h1 {
   margin-bottom: 30px;
 }
@@ -180,13 +183,13 @@ header p {
   margin-top: 20px;
   margin-bottom: 60px;
 }
-.program-info .run-in-head {
-  font: 300 16px/36px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  display: block;
+.program-info h5 {
+  font: 400 16px/36px 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   /*text-transform: uppercase;*/
   letter-spacing: .05em;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  /*margin-top: 15px;
+  margin-bottom: 15px;*/
+  margin: 15px 0 15px 170px;
   color: #dce4ef;
 }
 .program-info a.button {
