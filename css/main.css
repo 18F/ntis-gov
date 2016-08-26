@@ -181,22 +181,26 @@ header p {
   margin-bottom: 60px;
 }
 .program-info .run-in-head {
-  font: 400 12px/36px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 16px/36px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: block;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  /*text-transform: uppercase;*/
+  letter-spacing: .05em;
+  margin-top: 15px;
+  margin-bottom: 15px;
   color: #dce4ef;
 }
-.program-info .button {
+.program-info a.button {
   padding: 12px 60px;
   border: 1px solid #02bfe7;
-  font: 24px/30px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-left: 170px;
-  margin-bottom: 90px;
+  font: 20px/30px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /*margin-left: 170px;
+  margin-bottom: 90px;*/
+  margin: 0 0 90px 170px;
   display: inline-block;
   letter-spacing: .05em;
+}
+.program-info a:hover.button {
+  color: #fff;
 }
 address p {
   margin-bottom: 12px;
