@@ -109,10 +109,10 @@ footer .seal {
 .usa-site-header p {
   font-size: 11px;
 }
-.usa-disclaimer {
+.usa-site-header .usa-disclaimer-stage {
   float: left;
 }
-.usa-site-header .usa-disclaimer-stage {
+.usa-disclaimer {
   float: right;
 }
 .hero {
