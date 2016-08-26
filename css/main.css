@@ -254,7 +254,7 @@ footer .seal img {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .program-info p {
+  .program-info p, .program-info h5 {
     margin-left: 0;
   }
   .program-info .button {
