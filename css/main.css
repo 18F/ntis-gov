@@ -235,7 +235,7 @@ footer .seal img {
   margin-top: 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
     float: none;
     padding-left: 10px;
