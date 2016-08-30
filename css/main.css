@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: url(../images/mountain-bg.jpg) no-repeat center -550px fixed;
+  box-sizing: border-box;
 }
 h1, h2, h3, h4, h5 {
   margin: 0;
@@ -39,13 +40,7 @@ a {
 strong {
   font-weight: 700;
 }
-nav {
-  width: 960px;
-  padding-top: 40px;
-  margin: 0 auto;
-}
 header {
-  min-height: 360px;
   max-width: 960px;
   margin: 0 auto;
   padding: 60px 10px;
@@ -118,6 +113,14 @@ footer .seal {
 .hero {
   background: transparent url(../images/tile-blue.png) repeat;
 }
+.hero nav {
+  width: 960px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.hero header {
+  min-height: 360px;
+}
 .program-info {
   background-color: #112e51;
   padding-bottom: 180px;
@@ -129,7 +132,7 @@ footer .seal {
   border-top: 1px dotted #9bdaf1;
   margin: 120px 0 0;
 }
-nav ul {
+.hero nav ul {
   margin: 0 0 0 480px;
   list-style: none;
   display: flex;
@@ -137,11 +140,11 @@ nav ul {
   padding: 0;
   font-size: 14px;
 }
-nav ul li {
+.hero nav ul li {
   display: flex;
-  width: 33%;
+  /*width: 33%;*/
 }
-nav ul li a {
+.hero nav ul li a {
   width: 140px;
   text-decoration: none;
   padding: 10px 0 6px;
@@ -151,19 +154,50 @@ nav ul li a {
   align-items: stretch;
   border-bottom: 1px solid #000;
 }
-nav ul li a:hover {
+.hero nav ul li a:hover {
   border-bottom: 1px solid #fff;
 }
-header h1 {
+.hero header h1 {
   margin-bottom: 30px;
 }
-header h1 img {
+.hero header h1 img {
   height: 50px;
 }
-header p {
+.hero header p {
   font: 400 24px/36px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: .02em;
   max-width: 480px;
+}
+header.sub-page {
+  width: 960px;
+  /*padding: 60px 0 0;*/
+  margin: 0 auto 0 auto;
+  flex-direction: row;
+  /*flex-wrap: nowrap;*/
+  font-size: 14px;
+}
+header.sub-page nav {
+  display: flex;
+  align-items: stretch;
+}
+header.sub-page nav a {
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  margin: 0 0 0 10px;
+  color: #000;
+  min-width: 150px;
+  max-height: 24px;
+  display: block;
+  border-bottom: 1px solid #000;
+}
+header.sub-page nav a:first-child {
+  flex-grow: 2;
+  border-bottom: none;
+  padding-top: 0;
+}
+header.sub-page a img {
+  height: 36px;
 }
 .program-info p {
   font: 30px/36px 'Cormorant Garamond', 'Crimson Text', Georgia, serif;
@@ -240,14 +274,14 @@ footer .seal img {
     float: none;
     padding-left: 10px;
   }
-  nav {
+  .hero nav {
     width: 100%;
   }
-  nav ul {
+  .hero nav ul {
     margin-left: 0;
     flex-direction: column;
   }
-  nav ul li, nav ul li a {
+  .hero nav ul li, .hero nav ul li a {
     width: 100%;
   }
   header, section, footer {
