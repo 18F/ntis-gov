@@ -2,8 +2,13 @@ body {
   font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url(../images/mountain-bg.jpg) no-repeat center -550px fixed;
   box-sizing: border-box;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
 }
 h1, h2, h3, h4, h5 {
   margin: 0;
@@ -69,19 +74,11 @@ footer .seal {
   margin-top: 60px;
   padding-bottom: 20px;
 }
-/* Typographic */
-
-.opentype {
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -moz-font-feature-settings: "liga", "dlig";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig";
-}
 
 /* Structure */
-
+.homepage {
+  background: url(../images/mountain-bg.jpg) no-repeat center -550px fixed;
+}
 .container-fluid {
   width: 100%;
   height: auto;
@@ -115,7 +112,7 @@ footer .seal {
 }
 .hero nav {
   width: 960px;
-  padding-top: 40px;
+  padding-top: 60px;
   margin: 0 auto;
 }
 .hero header {
@@ -145,10 +142,10 @@ footer .seal {
   /*width: 33%;*/
 }
 .hero nav ul li a {
-  width: 140px;
+  width: 150px;
   text-decoration: none;
   padding: 10px 0 6px;
-  margin: 0 10px;
+  margin-left: 10px;
   color: #000;
   display: block;
   align-items: stretch;
@@ -170,10 +167,8 @@ footer .seal {
 }
 header.sub-page {
   width: 960px;
-  /*padding: 60px 0 0;*/
-  margin: 0 auto 0 auto;
+  margin: -2px auto 0 auto;
   flex-direction: row;
-  /*flex-wrap: nowrap;*/
   font-size: 14px;
 }
 header.sub-page nav {
@@ -183,7 +178,7 @@ header.sub-page nav {
 header.sub-page nav a {
   text-decoration: none;
   padding-top: 12px;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
   margin: 0 0 0 10px;
   color: #000;
   min-width: 150px;
