@@ -1,7 +1,8 @@
+/* ------------------------------
+Base styles
+--------------------------------*/
 body {
   font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-font-feature-settings: "liga", "dlig";
   -moz-font-feature-settings: "liga=1, dlig=1";
@@ -10,7 +11,7 @@ body {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
 }
-h1, h2, h3, h4, h5 {
+body, h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
 }
@@ -75,7 +76,15 @@ footer .seal {
   padding-bottom: 20px;
 }
 
-/* Structure */
+/* ------------------------------
+Colors
+--------------------------------*/
+
+
+
+/* ------------------------------
+Containers
+--------------------------------*/
 .homepage {
   background: url(../images/mountain-bg.jpg) no-repeat center -550px fixed;
 }
@@ -214,19 +223,14 @@ header.sub-page a img {
 }
 .program-info h5 {
   font: 400 16px/36px 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  /*text-transform: uppercase;*/
   letter-spacing: .05em;
-  /*margin-top: 15px;
-  margin-bottom: 15px;*/
   margin: 15px 0 15px 170px;
   color: #dce4ef;
 }
 .program-info a.button {
   padding: 12px 60px;
   border: 1px solid #02bfe7;
-  font: 20px/30px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  /*margin-left: 170px;
-  margin-bottom: 90px;*/
+  font: 20px/30px 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 0 90px 170px;
   display: inline-block;
   letter-spacing: .05em;
@@ -263,6 +267,20 @@ footer .seal img {
   height: 90px;
   margin-top: 12px;
 }
+
+/* ------------------------------
+Typographic
+--------------------------------*/
+
+
+/* ------------------------------
+Components
+--------------------------------*/
+
+
+/* ------------------------------
+Device-specific
+--------------------------------*/
 
 @media (max-width: 800px) {
   .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
