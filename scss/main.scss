@@ -3,7 +3,6 @@ Base styles
 --------------------------------*/
 body {
   font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
   -webkit-font-feature-settings: "liga", "dlig";
   -moz-font-feature-settings: "liga=1, dlig=1";
   -moz-font-feature-settings: "liga", "dlig";
@@ -16,11 +15,7 @@ body, h1, h2, h3, h4, h5 {
   padding: 0;
 }
 h2 {
-  font-weight: 700;
-  font-size: 36px;
-  text-transform: uppercase;
-  width: 940px;
-  margin: 90px auto;
+
 }
 h3 {
   font-weight: 500;
@@ -46,34 +41,35 @@ a {
 strong {
   font-weight: 700;
 }
-header {
+header, section, footer {
   max-width: 960px;
+}
+header {
   margin: 0 auto;
   padding: 60px 10px;
 }
-section, footer {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 section {
-
+  margin: 0 auto;
+}
+section, footer {
+  padding: 0 20px;
 }
 footer {
   margin: 90px auto 160px auto;
-  max-width: 960px;
 }
 address, footer .seal {
   font-style: normal;
   width: 280px;
-  padding: 20px 10px 0;
   line-height: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-top: 1px solid #02bfe7;
 }
+address {
+  padding: 20px 10px 0;
+}
 footer .seal {
   margin-top: 60px;
-  padding-bottom: 20px;
+  padding: 20px 10px 20px 10px;
 }
 
 /* ------------------------------
@@ -125,7 +121,7 @@ Containers
   margin: 0 auto;
 }
 .hero header {
-  min-height: 360px;
+  min-height: 400px;
 }
 .program-info {
   background-color: #112e51;
@@ -133,11 +129,7 @@ Containers
   height: auto;
   overflow: hidden;
 }
-.short-divider {
-  width: 60px;
-  border-top: 1px dotted #9bdaf1;
-  margin: 120px 0 0;
-}
+
 .hero nav ul {
   margin: 0 0 0 480px;
   list-style: none;
@@ -148,7 +140,6 @@ Containers
 }
 .hero nav ul li {
   display: flex;
-  /*width: 33%;*/
 }
 .hero nav ul li a {
   width: 150px;
@@ -163,11 +154,13 @@ Containers
 .hero nav ul li a:hover {
   border-bottom: 1px solid #fff;
 }
+
+/* ------------------------------
+Typography
+--------------------------------*/
+
 .hero header h1 {
   margin-bottom: 30px;
-}
-.hero header h1 img {
-  height: 50px;
 }
 .hero header p {
   font: 400 24px/36px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -200,9 +193,6 @@ header.sub-page nav a:first-child {
   border-bottom: none;
   padding-top: 0;
 }
-header.sub-page a img {
-  height: 36px;
-}
 .program-info p {
   font: 30px/36px 'Cormorant Garamond', 'Crimson Text', Georgia, serif;
   color: #fff;
@@ -227,6 +217,28 @@ header.sub-page a img {
   margin: 15px 0 15px 170px;
   color: #dce4ef;
 }
+address p {
+  margin-bottom: 12px;
+}
+address a {
+  color: #0071bc;
+}
+
+
+/* ------------------------------
+Components
+--------------------------------*/
+.hero header h1 img {
+  height: 50px;
+}
+header.sub-page a img {
+  height: 36px;
+}
+.short-divider {
+  width: 60px;
+  border-top: 1px dotted #9bdaf1;
+  margin: 120px 0 0;
+}
 .program-info a.button {
   padding: 12px 60px;
   border: 1px solid #02bfe7;
@@ -238,44 +250,29 @@ header.sub-page a img {
 .program-info a:hover.button {
   color: #fff;
 }
-address p {
-  margin-bottom: 12px;
-}
-address a {
-  color: #0071bc;
-}
 address .social-icon {
   display: inline-block;
   width: 34px;
-  height: 40px;
-  border-radius: 20px;
+  height: 34px;
+  border-radius: 17px;
   background-color: #9bdaf1;
-  padding-left: 6px;
+  padding-left: 4px;
   margin-bottom: 30px;
 }
 address a:hover.social-icon {
   text-decoration: none;
   background-color: #02bfe7;
 }
-address .short-divider {
-  width: 60px;
-  border-top: 1px solid #9bdaf1;
-  margin: 12px 0;
-}
+// address .short-divider {
+//   width: 60px;
+//   border-top: 1px solid #9bdaf1;
+//   margin: 12px 0;
+// }
 footer .seal img {
   width: 90px;
   height: 90px;
   margin-top: 12px;
 }
-
-/* ------------------------------
-Typographic
---------------------------------*/
-
-
-/* ------------------------------
-Components
---------------------------------*/
 
 
 /* ------------------------------
