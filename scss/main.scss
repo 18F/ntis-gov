@@ -288,6 +288,11 @@ footer .seal img {
 /* ------------------------------
 Device-specific
 --------------------------------*/
+@media (width > 2560px) {
+  #homepage, #about-us, #our-work, #partner {
+    background-size: cover;
+  }
+}
 @media (max-width: 800px) {
   .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
     float: none;
