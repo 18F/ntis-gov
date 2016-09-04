@@ -288,9 +288,10 @@ footer .seal img {
 /* ------------------------------
 Device-specific
 --------------------------------*/
-@media (width > 2560px) {
-  #homepage, #about-us, #our-work, #partner {
-    background-size: cover;
+@media (max-width: 320px) {
+  .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
+    float: none;
+    padding-left: 10px;
   }
 }
 @media (max-width: 800px) {
@@ -319,9 +320,8 @@ Device-specific
     margin-left: 0;
   }
 }
-@media (max-width: 320px) {
-  .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
-    float: none;
-    padding-left: 10px;
+@media (min-width: 2561px) {
+  #homepage, #about-us, #our-work, #partner {
+    background-size: cover;
   }
 }
