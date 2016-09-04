@@ -1,8 +1,14 @@
 /* ------------------------------
+Variables: Typography
+--------------------------------*/
+/* ------------------------------
+Variables: Colors
+--------------------------------*/
+/* ------------------------------
 Base styles
 --------------------------------*/
 body {
-  font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-feature-settings: "liga", "dlig";
   -moz-font-feature-settings: "liga=1, dlig=1";
   -moz-font-feature-settings: "liga", "dlig";
@@ -20,7 +26,7 @@ h3 {
   line-height: 30px; }
 
 h4 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: .0825em;
@@ -69,12 +75,12 @@ footer .seal {
   padding: 20px 10px 20px 10px; }
 
 /* ------------------------------
-Colors
+Layout
 --------------------------------*/
-/* ------------------------------
-Containers
---------------------------------*/
-.homepage {
+#homepage {
+  background: url(../images/mountain-bg.jpg) no-repeat center -550px fixed; }
+
+#about-us, #our-work, #partner {
   background: url(../images/mountain-bg.jpg) no-repeat center -550px fixed; }
 
 .container-fluid {
@@ -86,18 +92,14 @@ Containers
   top: 0;
   left: 0;
   background-color: #fff;
-  overflow: hidden;
-  padding: 4px 0;
-  border-bottom: 1px solid #999; }
+  overflow: hidden; }
 
 .usa-site-header {
   max-width: 960px;
   margin: 0 auto;
   padding: 4px 0;
-  height: auto; }
-
-.usa-site-header p {
-  font-size: 11px; }
+  height: auto;
+  overflow: hidden; }
 
 .usa-site-header .usa-disclaimer-stage {
   float: left; }
@@ -105,16 +107,20 @@ Containers
 .usa-disclaimer {
   float: right; }
 
-.hero {
+#homepage .hero {
   background: transparent url(../images/tile-blue.png) repeat; }
 
-.hero nav {
+#about-us .hero, #our-work .hero, #partner .hero {
+  background: transparent url(../images/tile-blue.png) repeat;
+  min-height: 400px; }
+
+#homepage .hero nav {
   width: 960px;
   padding-top: 60px;
   margin: 0 auto; }
 
-.hero header {
-  min-height: 400px; }
+#homepage .hero header {
+  min-height: 360px; }
 
 .program-info {
   background-color: #112e51;
@@ -122,7 +128,10 @@ Containers
   height: auto;
   overflow: hidden; }
 
-.hero nav ul {
+/* ------------------------------
+Navigation
+--------------------------------*/
+#homepage .hero nav ul {
   margin: 0 0 0 480px;
   list-style: none;
   display: flex;
@@ -130,10 +139,10 @@ Containers
   padding: 0;
   font-size: 14px; }
 
-.hero nav ul li {
+#homepage .hero nav ul li {
   display: flex; }
 
-.hero nav ul li a {
+#homepage .hero nav ul li a {
   width: 150px;
   text-decoration: none;
   padding: 10px 0 6px;
@@ -143,19 +152,8 @@ Containers
   align-items: stretch;
   border-bottom: 1px solid #000; }
 
-.hero nav ul li a:hover {
+#homepage .hero nav ul li a:hover {
   border-bottom: 1px solid #fff; }
-
-/* ------------------------------
-Typography
---------------------------------*/
-.hero header h1 {
-  margin-bottom: 30px; }
-
-.hero header p {
-  font: 400 24px/36px 'Libre Franklin', 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  letter-spacing: .02em;
-  max-width: 480px; }
 
 header.sub-page {
   width: 960px;
@@ -183,8 +181,22 @@ header.sub-page nav a:first-child {
   border-bottom: none;
   padding-top: 0; }
 
+/* ------------------------------
+Typography
+--------------------------------*/
+.usa-site-header p {
+  font-size: 11px; }
+
+#homepage .hero header h1 {
+  margin-bottom: 30px; }
+
+#homepage .hero header p {
+  font: 400 1.5em/1.5 "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .02em;
+  max-width: 480px; }
+
 .program-info p {
-  font: 30px/36px 'Cormorant Garamond', 'Crimson Text', Georgia, serif;
+  font: 1.875em/1.2 "Cormorant Garamond", Georgia, serif;
   color: #fff;
   max-width: 640px;
   margin-left: 170px;
@@ -202,7 +214,7 @@ header.sub-page nav a:first-child {
   margin-bottom: 60px; }
 
 .program-info h5 {
-  font: 400 16px/36px 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 400 1em/2.25 "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .05em;
   margin: 15px 0 15px 170px;
   color: #dce4ef; }
@@ -216,7 +228,7 @@ address a {
 /* ------------------------------
 Components
 --------------------------------*/
-.hero header h1 img {
+#homepage .hero header h1 img {
   height: 50px; }
 
 header.sub-page a img {
@@ -230,7 +242,7 @@ header.sub-page a img {
 .program-info a.button {
   padding: 12px 60px;
   border: 1px solid #02bfe7;
-  font: 20px/30px 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 1.25em/1.5 "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0 90px 170px;
   display: inline-block;
   letter-spacing: .05em; }
@@ -238,9 +250,9 @@ header.sub-page a img {
 .program-info a:hover.button {
   color: #fff; }
 
-address .social-icon {
+address a.social-icon {
   display: inline-block;
-  width: 34px;
+  width: 30px;
   height: 34px;
   border-radius: 17px;
   background-color: #9bdaf1;
