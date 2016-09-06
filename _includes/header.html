@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-  <title>{{ site.name }} | {{ page.title }}</title>
+  <title>{{ site.title }} | {{ page.title }}</title>
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Crimson+Text|Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 </head>
 
-<body id="{{ page.title }}">
+<body id="{{ page.id }}">
 
   <div class="container-fluid fixed">
     <div class="usa-site-header" role="banner">
@@ -27,5 +27,5 @@
   {% elsif page.title == "Our work" %}
   {% include nav-our-work.html %}
   {% else %}
-  {{ include nav-partner.html }}
+  {% include nav-partner.html %}
   {% endif %}

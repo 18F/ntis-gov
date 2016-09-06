@@ -1,6 +1,7 @@
 ---
 layout: subpage
-title: Our work
+title: About us
+id: about-us
 summary: One sentence that summarizes the page.
 ---
 

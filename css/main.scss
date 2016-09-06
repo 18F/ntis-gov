@@ -1,3 +1,5 @@
+---
+---
 
 /* ------------------------------
 Variables: Typography
@@ -37,8 +39,8 @@ h2 {
 }
 h3 {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5em;
+  line-height: 1.25;
 }
 h4 {
   color: $primary-alt-light;
@@ -99,16 +101,20 @@ footer .seal {
 Layout
 --------------------------------*/
 #homepage {
-  background: url(../images/mountain-bg.jpg) no-repeat center -550px fixed;
+  background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
   // background: url(../images/bridge-bg.jpg) no-repeat center 0 fixed;
   // background-size: cover;
 }
 #about-us, #our-work, #partner {
-  background: url(../images/mountain-bg.jpg) no-repeat center -550px fixed;
+  background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
 }
 .container-fluid {
   width: 100%;
   height: auto;
+}
+.container {
+  margin: 0 auto;
+  max-width: 960px;
 }
 .fixed {
   position: fixed;
@@ -130,12 +136,14 @@ Layout
 .usa-disclaimer {
   float: right;
 }
-#homepage .hero {
+#homepage .hero, .masthead {
   background: transparent url(../images/tile-blue.png) repeat;
 }
-#about-us .hero, #our-work .hero, #partner .hero {
-  background: transparent url(../images/tile-blue.png) repeat;
-  min-height: 400px;
+.masthead {
+  min-height: 540px;
+}
+.masthead .hero {
+  padding: 60px 0;
 }
 #homepage .hero nav {
   width: 960px;
@@ -202,8 +210,11 @@ header.sub-page nav a:first-child {
   border-bottom: none;
   padding-top: 0;
 }
-#homepage .hero nav ul li a:hover, header.sub-page nav a:hover, header.sub-page nav a.active {
+#homepage .hero nav ul li a:hover, header.sub-page nav a:hover {
   border-bottom: 1px solid #fff;
+}
+header.sub-page nav a.active {
+  border-bottom: 2px solid #000;
 }
 header.sub-page nav a:first-child:hover {
   border: none;
@@ -217,7 +228,7 @@ Typography
 #homepage .hero header h1 {
   margin-bottom: 30px;
 }
-#homepage .hero header p {
+h2, #homepage .hero header p {
   font: 400 1.5em/1.5 $sans-serif;
   letter-spacing: .02em;
   max-width: 480px;
@@ -266,20 +277,12 @@ address a {
 /* ------------------------------
 Components
 --------------------------------*/
-a.active {
-
-}
 #homepage .hero header h1 img {
   height: 50px;
 }
 header.sub-page a img {
   height: 36px;
 }
-// .short-divider {
-//   width: 60px;
-//   border-top: 1px dotted $primary-alt-light;
-//   margin: 120px 0 0;
-// }
 .program-info a.button {
   padding: 12px 60px;
   border: 1px solid $primary-alt;
