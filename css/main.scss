@@ -106,7 +106,10 @@ Layout
   background-size: cover;
 }
 #about-us, #our-work, #partner {
-  background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
+  // background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
+  background: url(../images/bridge-bg.jpg) no-repeat fixed;
+  background-size: cover;
+
 }
 .container-fluid {
   width: 100%;
@@ -162,68 +165,104 @@ Layout
 /* ------------------------------
 Navigation
 --------------------------------*/
-#homepage .hero nav ul {
-  margin: 0 0 0 480px;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
+nav ul {
+  max-width: 960px;
+  margin: 0 auto;
+  list-style-type: none;
   padding: 0;
-  font-size: 14px;
-  box-sizing: border-box;
-  padding-right: 10px;
-}
-#homepage .hero nav ul li {
   display: flex;
-}
-#homepage .hero nav ul li a {
-  width: 150px;
-  text-decoration: none;
-  padding: 10px 0 6px;
-  margin-left: 10px;
-  color: #000;
-  display: block;
-  align-items: stretch;
-  border-bottom: 1px solid #000;
-}
-header.sub-page {
-  width: 960px;
-  margin: -2px auto 0 auto;
   flex-direction: row;
-  font-size: 14px;
-  padding-left: 0;
   box-sizing: border-box;
 }
-header.sub-page nav {
+nav ul li {
   display: flex;
-  align-items: stretch;
+  width: 150px;
+  margin-left: 10px;
 }
-header.sub-page nav a {
-  text-decoration: none;
-  padding-top: 12px;
-  padding-bottom: 6px;
-  margin: 0 0 0 10px;
+nav ul li a {
+  width: 150px;
+  height: 20px;
   color: #000;
-  // flex-grow: 1;
-  min-width: 150px;
-  max-height: 24px;
-  display: block;
+  align-items: stretch;
   border-bottom: 1px solid #000;
+  display: block;
+  padding: 10px 0 6px;
 }
-header.sub-page nav a:first-child {
-  flex-grow: 2;
-  border-bottom: none;
-  padding-top: 0;
-  padding-bottom: 30px;
-}
-#homepage .hero nav ul li a:hover, header.sub-page nav a:hover {
+nav ul li a:hover {
   border-bottom: 1px solid #fff;
 }
-header.sub-page nav a.active {
+nav ul li a.active {
   border-bottom: 2px solid #000;
 }
-header.sub-page nav a:first-child:hover {
-  border: none;
+nav ul li:first-child {
+  flex-grow: 2;
+  margin-left: 0;
 }
+nav ul li:first-child a {
+  border-bottom: none;
+}
+
+// #homepage .hero nav ul {
+//   margin: 0 0 0 480px;
+//   list-style: none;
+//   display: flex;
+//   flex-direction: row;
+//   padding: 0;
+//   font-size: 14px;
+//   box-sizing: border-box;
+//   padding-right: 10px;
+// }
+// #homepage .hero nav ul li {
+//   display: flex;
+// }
+// #homepage .hero nav ul li a {
+//   width: 150px;
+//   text-decoration: none;
+//   padding: 10px 0 6px;
+//   margin-left: 10px;
+//   color: #000;
+//   display: block;
+//   align-items: stretch;
+//   border-bottom: 1px solid #000;
+// }
+// header.sub-page {
+//   width: 960px;
+//   margin: -2px auto 0 auto;
+//   flex-direction: row;
+//   font-size: 14px;
+//   padding-left: 0;
+//   box-sizing: border-box;
+// }
+// header.sub-page nav {
+//   display: flex;
+//   align-items: stretch;
+// }
+// header.sub-page nav a {
+//   text-decoration: none;
+//   padding-top: 12px;
+//   padding-bottom: 6px;
+//   margin: 0 0 0 10px;
+//   color: #000;
+//   min-width: 150px;
+//   max-height: 24px;
+//   display: block;
+//   border-bottom: 1px solid #000;
+// }
+// header.sub-page nav a:first-child {
+//   flex-grow: 2;
+//   border-bottom: none;
+//   padding-top: 0;
+//   padding-bottom: 30px;
+// }
+// #homepage .hero nav ul li a:hover, header.sub-page nav a:hover {
+//   border-bottom: 1px solid #fff;
+// }
+// header.sub-page nav a.active {
+//   border-bottom: 2px solid #000;
+// }
+// header.sub-page nav a:first-child:hover {
+//   border: none;
+// }
 /* ------------------------------
 Typography
 --------------------------------*/
