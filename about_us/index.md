@@ -2,7 +2,7 @@
 layout: subpage
 title: About us
 id: about-us
-summary: One sentence that summarizes the page.
+summary: Change this sentence to provide an overview the page.
 ---
 
 #### Some subhead
