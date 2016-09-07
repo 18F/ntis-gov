@@ -102,15 +102,15 @@ footer .seal {
 /* ------------------------------
 Layout
 --------------------------------*/
-#homepage {
-  background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
-  // background: url(../images/bridge-bg.jpg) no-repeat center 0 fixed;
-  // background-size: cover;
+#homepage, #about-us, #our-work, #partner {
+  // background: url(../images/bridge-bg.jpg) no-repeat left -200px fixed;
+  background: url(../images/D8ijGd3CSGq4BxJ9EzTf_13976945916_fa0ce84ee3_o.jpg) no-repeat center 0 fixed;
+  background-size: cover;
 }
 #about-us, #our-work, #partner {
   // background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
-  background: url(../images/photo-1447159840826-a8be01f52eb8.jpeg) no-repeat fixed;
-  background-size: cover;
+  // background: url(../images/photo-1447159840826-a8be01f52eb8.jpeg) no-repeat fixed;
+  // background-size: cover;
 }
 .container-fluid {
   width: 100%;
@@ -176,21 +176,21 @@ nav ul li {
   margin-left: 10px;
 }
 nav ul li a {
-  font-size: 12px;
+  font-size: 13px;
   width: 150px;
   height: 20px;
-  color: #000;
+  color: #fff;
   align-items: stretch;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
   display: block;
   padding: 10px 0 2px;
   align-self: flex-start;
 }
 nav ul li a:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #000;
 }
 nav ul li a.active {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
 }
 nav ul li:first-child {
   flex-grow: 2;
@@ -213,9 +213,12 @@ Typography
   margin-bottom: 30px;
 }
 h2, .hero p {
-  font: 400 1.5em/1.5 $sans-serif;
+  font: 400 2.5em/1.5 $sans-serif;
   letter-spacing: .02em;
   max-width: 600px;
+  padding: 2px;
+  display: inline;
+  background-color: rgba(255, 255, 255, .6)
 }
 .program-info p {
   font: 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
