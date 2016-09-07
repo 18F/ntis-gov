@@ -34,6 +34,9 @@ body, h1, h2, h3, h4, h5, p, ul, li {
   margin: 0;
   padding: 0;
 }
+h1{
+
+}
 h2 {
 
 }
@@ -101,15 +104,14 @@ footer .seal {
 Layout
 --------------------------------*/
 #homepage {
-  // background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
-  background: url(../images/bridge-bg.jpg) no-repeat fixed;
-  background-size: cover;
+  background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
+  // background: url(../images/bridge-bg.jpg) no-repeat center 0 fixed;
+  // background-size: cover;
 }
 #about-us, #our-work, #partner {
   // background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
-  background: url(../images/bridge-bg.jpg) no-repeat fixed;
+  background: url(../images/photo-1447159840826-a8be01f52eb8.jpeg) no-repeat fixed;
   background-size: cover;
-
 }
 .container-fluid {
   width: 100%;
@@ -139,22 +141,21 @@ Layout
 .usa-disclaimer {
   float: right;
 }
-#homepage .hero, .masthead {
-  background: transparent url(../images/tile-blue.png) repeat;
+.hero {
+  padding: 0 20px;
 }
 .masthead {
+  background: transparent url(../images/tile-blue.png) repeat;
   min-height: 540px;
+  // padding-top: 20px;
 }
-.masthead .hero {
-  padding: 60px 0;
-}
-#homepage .hero nav {
-  width: 960px;
-  padding-top: 60px;
-  margin: 0 auto;
-}
-#homepage .hero header {
-  min-height: 360px;
+// .hero nav {
+//   width: 960px;
+//   padding-top: 60px;
+//   margin: 0 auto;
+// }
+.hero header {
+  // min-height: 360px;
 }
 .program-info {
   background-color: $primary-darkest;
@@ -165,14 +166,18 @@ Layout
 /* ------------------------------
 Navigation
 --------------------------------*/
-nav ul {
+nav {
+  // font-size: 12px;
   max-width: 960px;
   margin: 0 auto;
+  // box-sizing: border-box;
+}
+nav ul {
+  max-width: 960px;
   list-style-type: none;
   padding: 0;
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
 }
 nav ul li {
   display: flex;
@@ -180,13 +185,16 @@ nav ul li {
   margin-left: 10px;
 }
 nav ul li a {
+  font-size: 12px;
   width: 150px;
   height: 20px;
   color: #000;
   align-items: stretch;
   border-bottom: 1px solid #000;
   display: block;
-  padding: 10px 0 6px;
+  padding: 10px 0 2px;
+  align-self: flex-end;
+  // border: 1px solid #f00;
 }
 nav ul li a:hover {
   border-bottom: 1px solid #fff;
@@ -197,9 +205,14 @@ nav ul li a.active {
 nav ul li:first-child {
   flex-grow: 2;
   margin-left: 0;
+  align-self: flex-start;
 }
 nav ul li:first-child a {
   border-bottom: none;
+  // border: 1px solid #000;
+}
+nav ul li:first-child a img {
+  height: 40px;
 }
 
 // #homepage .hero nav ul {
@@ -269,13 +282,13 @@ Typography
 .usa-site-header p {
   font-size: 11px;
 }
-#homepage .hero header h1 {
+.hero h1 {
   margin-bottom: 30px;
 }
-h2, #homepage .hero header p {
+h2, .hero p {
   font: 400 1.5em/1.5 $sans-serif;
   letter-spacing: .02em;
-  max-width: 480px;
+  max-width: 600px;
 }
 .program-info p {
   font: 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
@@ -285,7 +298,7 @@ h2, #homepage .hero header p {
   padding-bottom: 30px;
 }
 .program-info p a:hover {
-    border-bottom: 1px solid $primary-alt;
+  border-bottom: 1px solid $primary-alt;
 }
 .program-info h4 {
   color: $primary-alt-light;
@@ -321,12 +334,12 @@ address a {
 /* ------------------------------
 Components
 --------------------------------*/
-#homepage .hero header h1 img {
-  height: 50px;
+#homepage h1 img {
+  height: 40px;
 }
-header.sub-page a img {
-  height: 36px;
-}
+// header.sub-page a img {
+//   height: 36px;
+// }
 .program-info a.button {
   padding: 12px 60px;
   border: 1px solid $primary-alt;
@@ -361,15 +374,28 @@ footer .seal img {
 Device-specific
 --------------------------------*/
 @media (max-width: 320px) {
+  #homepage {
+    background: none;
+  }
   .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
     float: none;
     padding-left: 10px;
   }
 }
 @media (max-width: 800px) {
-  // #homepage {
-  //   background-size: auto;
-  // }
+  #homepage {
+    background-size: auto;
+  }
+  nav, section, footer, .container {
+    width: calc(100% - 20px);
+  }
+  .hero {
+    width: calc(100% - 40px);
+    // border: 1px solid #f00;
+  }
+  .hero h1, .hero p {
+    // padding: 0 10px;
+  }
   .usa-site-header {
     width: 100%;
   }
@@ -377,22 +403,39 @@ Device-specific
     float: none;
     padding-left: 10px;
   }
-  #homepage .hero nav, header.sub-page {
+  nav ul, nav ul li, nav ul li a {
+    // width: calc(100% - 40px);
     width: 100%;
+    height: auto;
+    // display: inline-block;
   }
-  #homepage .hero nav ul, header.sub-page nav {
-    margin-left: 0;
+  nav ul, nav ul li {
     flex-direction: column;
   }
-  #homepage .hero nav ul li, #homepage .hero nav ul li a, header.sub-page nav a {
-    width: 100%;
+  nav ul li {
+    flex-grow: 0;
+    margin-left: 0;
   }
-  header, section, footer, .masthead .hero {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+
+  // #homepage .hero nav, header.sub-page {
+  //   width: calc(100% - 40px);
+  // }
+  // #homepage .hero nav ul, header.sub-page nav {
+  //   margin-left: 0;
+  //   flex-direction: column;
+  // }
+  // #homepage .hero nav ul li, #homepage .hero nav ul li a, header.sub-page nav a {
+  //   width: 100%;
+  // }
+  // header, section, footer, .container, #homepage .hero {
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  // }
+
   .program-info p, .program-info h5 {
     margin-left: 0;
+    width: calc(100% - 20px);
+
   }
   .program-info a.button {
     margin-left: 0;
