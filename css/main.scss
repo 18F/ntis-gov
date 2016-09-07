@@ -1,0 +1,361 @@
+---
+---
+
+/* ------------------------------
+Variables: Typography
+--------------------------------*/
+$sans-serif: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif: 'Cormorant Garamond', Georgia, serif;
+
+/* ------------------------------
+Variables: Colors
+--------------------------------*/
+$primary: #0071bc;
+$primary-alt: #02bfe7;  // bright blue
+$primary-alt-light: #9bdaf1;  // light blue
+$primary-darkest: #112e51;  // dark blue
+$secondary-dark: #cd2026;   // red
+$gray-cool-light: #dce4ef;
+
+/* ------------------------------
+Base styles
+--------------------------------*/
+body {
+  font-family: $sans-serif;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+body, h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+h1{
+
+}
+h2 {
+
+}
+h3 {
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+h4 {
+  color: $primary-alt-light;
+  font-size: .75em;
+  font-weight: 400;
+  line-height: 2;
+  max-width: 200px;
+  display: block;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  position: relative;
+  letter-spacing: .0825em;
+  text-transform: uppercase;
+}
+p {
+  font-size: .875em;
+  line-height: 1.2;
+}
+a {
+  text-decoration: none;
+  color: $primary-alt;
+}
+strong {
+  font-weight: 700;
+}
+header, section, footer {
+  max-width: 960px;
+}
+header {
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+section {
+  margin: 0 auto;
+}
+section, footer {
+  padding: 0 20px;
+}
+footer {
+  margin: 90px auto 160px auto;
+}
+address, footer .seal {
+  font-style: normal;
+  width: 280px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid $primary-alt;
+}
+address {
+  padding: 20px 10px 0;
+}
+footer .seal {
+  margin-top: 60px;
+  padding: 20px 10px 20px 10px;
+}
+/* ------------------------------
+Layout
+--------------------------------*/
+#homepage, #about-us, #our-work, #partner {
+  // background: url(../images/bridge-bg.jpg) no-repeat left -200px fixed;
+  background: url(../images/D8ijGd3CSGq4BxJ9EzTf_13976945916_fa0ce84ee3_o.jpg) no-repeat center 0 fixed;
+  background-size: cover;
+}
+#about-us, #our-work, #partner {
+  // background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
+  // background: url(../images/photo-1447159840826-a8be01f52eb8.jpeg) no-repeat fixed;
+  // background-size: cover;
+}
+.container-fluid {
+  width: 100%;
+  height: auto;
+}
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+.usa-site-header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4px 0;
+  height: auto;
+  overflow: hidden;
+}
+.usa-site-header .usa-disclaimer-stage {
+  float: left;
+}
+.usa-disclaimer {
+  float: right;
+}
+.hero {
+  padding: 0 20px 30px 20px;
+}
+.masthead {
+  background: transparent url(../images/tile-blue.png) repeat;
+  min-height: 540px;
+}
+.hero header {
+  // min-height: 360px;
+}
+.program-info {
+  background-color: $primary-darkest;
+  padding-bottom: 180px;
+  height: auto;
+  overflow: hidden;
+}
+/* ------------------------------
+Navigation
+--------------------------------*/
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+}
+nav ul {
+  max-width: 960px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  display: flex;
+  width: 150px;
+  margin-left: 10px;
+}
+nav ul li a {
+  font-size: 13px;
+  width: 150px;
+  height: 20px;
+  color: #fff;
+  align-items: stretch;
+  border-bottom: 1px solid #fff;
+  display: block;
+  padding: 10px 0 2px;
+  align-self: flex-start;
+}
+nav ul li a:hover {
+  border-bottom: 1px solid #000;
+}
+nav ul li a.active {
+  border-bottom: 2px solid #fff;
+}
+nav ul li:first-child {
+  flex-grow: 2;
+  margin-left: 0;
+  margin-top: -10px;
+}
+nav ul li:first-child a {
+  border-bottom: none;
+}
+nav ul li:first-child a img {
+  height: 40px;
+}
+/* ------------------------------
+Typography
+--------------------------------*/
+.usa-site-header p {
+  font-size: 11px;
+}
+.hero h1 {
+  margin-bottom: 30px;
+}
+h2, .hero p {
+  font: 400 2.5em/1.5 $sans-serif;
+  letter-spacing: .02em;
+  max-width: 600px;
+  padding: 2px;
+  display: inline;
+  background-color: rgba(255, 255, 255, .6)
+}
+.program-info p {
+  font: 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
+  color: #fff;
+  max-width: 640px;
+  margin-left: 170px;
+  padding-bottom: 30px;
+}
+.program-info p a:hover {
+  border-bottom: 1px solid $primary-alt;
+}
+.program-info h4 {
+  color: $primary-alt-light;
+  font-weight: 400;
+  max-width: 200px;
+  display: block;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  position: relative;
+}
+.program-info h4:before { // This adds a 60px-rule above
+  content: "";
+  background-color: $primary-alt-light;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 60px;
+}
+.program-info h5 {
+  font: 400 1em/2.25 $sans-serif;
+  letter-spacing: .05em;
+  margin: 15px 0 15px 170px;
+  color: $gray-cool-light;
+}
+address p {
+  margin-bottom: 12px;
+}
+address a {
+  color: $primary;
+}
+/* ------------------------------
+Components
+--------------------------------*/
+#homepage h1 img {
+  height: 40px;
+}
+.program-info a.button {
+  padding: 12px 60px;
+  border: 1px solid $primary-alt;
+  font: 1.25em/1.5 $sans-serif;
+  margin: 0 0 90px 170px;
+  display: inline-block;
+  letter-spacing: .05em;
+}
+.program-info a:hover.button {
+  color: #fff;
+}
+address a.social-icon {
+  display: inline-block;
+  width: 30px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: $primary-alt-light;
+  padding-left: 4px;
+  margin-bottom: 30px;
+}
+address a:hover.social-icon {
+  text-decoration: none;
+  background-color: $primary-alt;
+}
+footer .seal img {
+  width: 90px;
+  height: 90px;
+  margin-top: 12px;
+}
+
+/* ------------------------------
+Device-specific
+--------------------------------*/
+@media (max-width: 320px) {
+  #homepage {
+    background: none;
+  }
+  .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
+    float: none;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 800px) {
+  #homepage {
+    background-size: auto;
+  }
+  nav, section, footer, .container {
+    width: calc(100% - 20px);
+  }
+  .hero {
+    width: calc(100% - 40px);
+  }
+  .hero h2, .hero p {
+    font-size: 1.5em;
+  }
+  .usa-site-header {
+    width: 100%;
+  }
+  .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
+    float: none;
+    padding-left: 10px;
+  }
+  nav ul, nav ul li, nav ul li a {
+    width: 100%;
+    height: auto;
+  }
+  nav ul, nav ul li {
+    flex-direction: column;
+  }
+  nav ul li {
+    flex-grow: 0;
+    margin-left: 0;
+  }
+  .program-info p, .program-info h5 {
+    margin-left: 0;
+    width: calc(100% - 20px);
+  }
+  .program-info a.button {
+    margin-left: 0;
+  }
+}
+@media (max-width: 960px) {
+  nav ul li:first-child a {
+    margin-left: 12px;
+  }
+}
+
+// @media (min-width: 2561px) {
+//   #homepage, #about-us, #our-work, #partner {
+//     background-size: cover;
+//   }
+// }
