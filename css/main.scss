@@ -17,7 +17,6 @@ $primary-darkest: #112e51;  // dark blue
 $secondary-dark: #cd2026;   // red
 $gray-cool-light: #dce4ef;
 
-
 /* ------------------------------
 Base styles
 --------------------------------*/
@@ -147,13 +146,7 @@ Layout
 .masthead {
   background: transparent url(../images/tile-blue.png) repeat;
   min-height: 540px;
-  // padding-top: 20px;
 }
-// .hero nav {
-//   width: 960px;
-//   padding-top: 60px;
-//   margin: 0 auto;
-// }
 .hero header {
   // min-height: 360px;
 }
@@ -167,10 +160,8 @@ Layout
 Navigation
 --------------------------------*/
 nav {
-  // font-size: 12px;
   max-width: 960px;
   margin: 0 auto;
-  // box-sizing: border-box;
 }
 nav ul {
   max-width: 960px;
@@ -193,8 +184,7 @@ nav ul li a {
   border-bottom: 1px solid #000;
   display: block;
   padding: 10px 0 2px;
-  align-self: flex-end;
-  // border: 1px solid #f00;
+  align-self: flex-start;
 }
 nav ul li a:hover {
   border-bottom: 1px solid #fff;
@@ -205,77 +195,14 @@ nav ul li a.active {
 nav ul li:first-child {
   flex-grow: 2;
   margin-left: 0;
-  align-self: flex-start;
+  margin-top: -10px;
 }
 nav ul li:first-child a {
   border-bottom: none;
-  // border: 1px solid #000;
 }
 nav ul li:first-child a img {
   height: 40px;
 }
-
-// #homepage .hero nav ul {
-//   margin: 0 0 0 480px;
-//   list-style: none;
-//   display: flex;
-//   flex-direction: row;
-//   padding: 0;
-//   font-size: 14px;
-//   box-sizing: border-box;
-//   padding-right: 10px;
-// }
-// #homepage .hero nav ul li {
-//   display: flex;
-// }
-// #homepage .hero nav ul li a {
-//   width: 150px;
-//   text-decoration: none;
-//   padding: 10px 0 6px;
-//   margin-left: 10px;
-//   color: #000;
-//   display: block;
-//   align-items: stretch;
-//   border-bottom: 1px solid #000;
-// }
-// header.sub-page {
-//   width: 960px;
-//   margin: -2px auto 0 auto;
-//   flex-direction: row;
-//   font-size: 14px;
-//   padding-left: 0;
-//   box-sizing: border-box;
-// }
-// header.sub-page nav {
-//   display: flex;
-//   align-items: stretch;
-// }
-// header.sub-page nav a {
-//   text-decoration: none;
-//   padding-top: 12px;
-//   padding-bottom: 6px;
-//   margin: 0 0 0 10px;
-//   color: #000;
-//   min-width: 150px;
-//   max-height: 24px;
-//   display: block;
-//   border-bottom: 1px solid #000;
-// }
-// header.sub-page nav a:first-child {
-//   flex-grow: 2;
-//   border-bottom: none;
-//   padding-top: 0;
-//   padding-bottom: 30px;
-// }
-// #homepage .hero nav ul li a:hover, header.sub-page nav a:hover {
-//   border-bottom: 1px solid #fff;
-// }
-// header.sub-page nav a.active {
-//   border-bottom: 2px solid #000;
-// }
-// header.sub-page nav a:first-child:hover {
-//   border: none;
-// }
 /* ------------------------------
 Typography
 --------------------------------*/
@@ -337,9 +264,6 @@ Components
 #homepage h1 img {
   height: 40px;
 }
-// header.sub-page a img {
-//   height: 36px;
-// }
 .program-info a.button {
   padding: 12px 60px;
   border: 1px solid $primary-alt;
@@ -391,7 +315,6 @@ Device-specific
   }
   .hero {
     width: calc(100% - 40px);
-    // border: 1px solid #f00;
   }
   .hero h1, .hero p {
     // padding: 0 10px;
@@ -404,10 +327,8 @@ Device-specific
     padding-left: 10px;
   }
   nav ul, nav ul li, nav ul li a {
-    // width: calc(100% - 40px);
     width: 100%;
     height: auto;
-    // display: inline-block;
   }
   nav ul, nav ul li {
     flex-direction: column;
@@ -416,31 +337,20 @@ Device-specific
     flex-grow: 0;
     margin-left: 0;
   }
-
-  // #homepage .hero nav, header.sub-page {
-  //   width: calc(100% - 40px);
-  // }
-  // #homepage .hero nav ul, header.sub-page nav {
-  //   margin-left: 0;
-  //   flex-direction: column;
-  // }
-  // #homepage .hero nav ul li, #homepage .hero nav ul li a, header.sub-page nav a {
-  //   width: 100%;
-  // }
-  // header, section, footer, .container, #homepage .hero {
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  // }
-
   .program-info p, .program-info h5 {
     margin-left: 0;
     width: calc(100% - 20px);
-
   }
   .program-info a.button {
     margin-left: 0;
   }
 }
+@media (max-width: 960px) {
+  nav ul li:first-child a {
+    margin-left: 12px;
+  }
+}
+
 // @media (min-width: 2561px) {
 //   #homepage, #about-us, #our-work, #partner {
 //     background-size: cover;
