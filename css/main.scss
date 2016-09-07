@@ -141,7 +141,7 @@ Layout
   float: right;
 }
 .hero {
-  padding: 0 20px;
+  padding: 0 20px 30px 20px;
 }
 .masthead {
   background: transparent url(../images/tile-blue.png) repeat;
@@ -319,8 +319,8 @@ Device-specific
   .hero {
     width: calc(100% - 40px);
   }
-  .hero h1, .hero p {
-    // padding: 0 10px;
+  .hero h2, .hero p {
+    font-size: 1.5em;
   }
   .usa-site-header {
     width: 100%;
