@@ -2,7 +2,7 @@
 layout: subpage
 title: Partner
 id: partner
-summary: One sentence that summarizes the page.
+summary: One sentence that summarizes the Partners page.
 ---
 
 #### Some subhead
