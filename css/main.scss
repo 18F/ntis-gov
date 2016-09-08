@@ -20,6 +20,9 @@ $gray-cool-light: #dce4ef;
 /* ------------------------------
 Base styles
 --------------------------------*/
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: $sans-serif;
   -webkit-font-feature-settings: "liga", "dlig";
@@ -86,6 +89,7 @@ footer {
   margin: 90px auto 160px auto;
 }
 address, footer .seal {
+  font-size: .875em;
   font-style: normal;
   width: 280px;
   line-height: 20px;
@@ -178,7 +182,7 @@ nav ul li {
 nav ul li a {
   font-size: 13px;
   width: 150px;
-  height: 20px;
+  height: 30px;
   color: #fff;
   align-items: stretch;
   border-bottom: 1px solid #fff;
@@ -195,7 +199,7 @@ nav ul li a.active {
 nav ul li:first-child {
   flex-grow: 2;
   margin-left: 0;
-  margin-top: -10px;
+  margin-top: -6px;
 }
 nav ul li:first-child a {
   border-bottom: none;
@@ -281,16 +285,20 @@ Components
 address a.social-icon {
   display: inline-block;
   width: 30px;
-  height: 34px;
-  border-radius: 17px;
+  height: 30px;
+  border-radius: 15px;
   background-color: $primary-alt-light;
-  padding-left: 4px;
+  padding-left: 2px;
   margin-bottom: 30px;
 }
 address a:hover.social-icon {
   text-decoration: none;
   background-color: $primary-alt;
 }
+// address a.social-icon svg {
+//   width: 20px;
+//   height: 20px;
+// }
 footer .seal img {
   width: 90px;
   height: 90px;
