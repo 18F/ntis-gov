@@ -2,13 +2,33 @@
 layout: subpage
 title: About us
 id: about-us
-summary: No other group can replicate our history or experience managing data 
+summary: Transforming big data into better public services
 ---
 
-#### Some subhead
+#### About us
 
-Lorem ipsum dolor sit consectetuer. Duis autem quid nostrud.
+The National Technical Information Service (NTIS) is part of “America’s Data Agency,” the Department of Commerce. 
 
-#### Another subhead goes here
+Here at NTIS, we help federal agencies securely store, analyze, sort, and aggregate massive amounts of data in new ways. We pair our agency partners with innovators from the private-sector using our Joint Venture Partnership program. This program lets agencies work side-by-side with universities, nonprofits and industry professionals— together, they can experiment with data science technologies before they’re available in the marketplace. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas elit erat, nec dictum felis egestas nec. 
+#### Our history
+
+No other group can replicate our history and experience managing data. 
+
+Originally called the Publication Board, NTIS was created after World War II. Our original purpose was to serve as the U.S. government's repository for scientific research and information. 
+
+Today, we maintain the world’s most comprehensive collection of U.S.-sponsored research. We house more than 3 million publications, and our data covers topics that range from aerodynamics to urban development. Our archive spans the Manhattan project to present. 
+
+#### Our team
+
+We believe diverse teams produce the best work, and so our projects are staffed with people inside and outside the government. 
+
+We have in-house data scientists, project managers, researchers, and engineers. Our Joint Venture Partners include private companies, nonprofits, and universities.
+
+#### Job opportunities
+
+We’re a 200-person organization dedicated to helping government ask questions and get results — all using data.
+
+Our mission demands data-savvy people.  We’re looking for people who speak R, Python, and D3. Who dream in Databricks, Spark, and AWS. Who believe better data insights can lead to better public services.
+
+
