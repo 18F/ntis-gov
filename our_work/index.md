@@ -18,4 +18,4 @@ Our projects involve just the type of public-private cooperation that the strate
 
 Our team works fast, in the open, and with Joint Venture Partners. We adhere to the highest privacy and security standards: We support only trusted data networks; we follow rigorous privacy and security guidelines.
 
-Do you have a project in mind? Let us know: email@email.email. We'll respond within 24 hours. 
+Do you have a project in mind? Let us know: info@ntis.gov. We'll respond within 24 hours. 
