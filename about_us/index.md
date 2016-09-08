@@ -2,7 +2,7 @@
 layout: subpage
 title: About us
 id: about-us
-summary: Change this sentence to provide an overview for the About Us page.
+summary: No other group can replicate our history or experience managing data 
 ---
 
 #### Some subhead
