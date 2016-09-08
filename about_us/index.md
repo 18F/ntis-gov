@@ -7,7 +7,7 @@ summary: Transforming big data into better public services
 
 #### About us
 
-The National Technical Information Service (NTIS) is part of “America’s Data Agency,” the Department of Commerce. 
+The National Technical Information Service (NTIS) is part of <q>America’s Data Agency</q>, the Department of Commerce. 
 
 Here at NTIS, we help federal agencies securely store, analyze, sort, and aggregate massive amounts of data in new ways. We pair our agency partners with innovators from the private-sector using our Joint Venture Partnership program. This program lets agencies work side-by-side with universities, nonprofits and industry professionals— together, they can experiment with data science technologies before they’re available in the marketplace. 
 
