@@ -2,7 +2,7 @@
 layout: subpage
 title: Our work
 id: our-work
-summary: One sentence that summarizes the page.
+summary: One sentence intro that summarizes Our Work.
 ---
 
 #### Some subhead
