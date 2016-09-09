@@ -28,4 +28,4 @@ We look for government partners on projects that need fast execution and require
 
 #### Get started
 
-<a href="mailto:usinessopportunities@ntis.gov">Reach out to us</a>. We’ll respond within 24 hours.
+<a href="mailto:businessopportunities@ntis.gov">Reach out to us</a>. We’ll respond within 24 hours.

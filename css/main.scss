@@ -187,14 +187,15 @@ nav ul li a {
   align-items: stretch;
   border-bottom: 1px solid #fff;
   display: block;
-  padding: 10px 0 2px;
+  padding: 4px 0;
   align-self: flex-start;
 }
 nav ul li a:hover {
   border-bottom: 1px solid #000;
 }
 nav ul li a.active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 3px solid #fff;
+  color: #fff;
 }
 nav ul li:first-child {
   flex-grow: 2;
@@ -205,7 +206,7 @@ nav ul li:first-child a {
   border-bottom: none;
 }
 nav ul li:first-child a img {
-  height: 40px;
+  height: 30px;
 }
 /* ------------------------------
 Typography
@@ -272,7 +273,7 @@ address a {
 Components
 --------------------------------*/
 #homepage h1 img {
-  height: 40px;
+  height: 60px;
 }
 .program-info a.button {
   padding: 12px 60px;
@@ -317,6 +318,9 @@ Device-specific
   }
 }
 @media (max-width: 800px) {
+  #homepage h1 img {
+    height: 40px;
+  }
   #homepage {
     background-size: auto;
   }
@@ -338,7 +342,6 @@ Device-specific
   }
   nav ul, nav ul li, nav ul li a {
     width: 100%;
-    height: auto;
   }
   nav ul, nav ul li {
     flex-direction: column;
@@ -346,6 +349,20 @@ Device-specific
   nav ul li {
     flex-grow: 0;
     margin-left: 0;
+  }
+  nav ul li a {
+    min-height: 40px;
+    // padding-left: 20px;
+    padding: 10px 0 0 20px;
+    background: none;
+  }
+  nav ul li:first-child a {
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  nav ul li a.active {
+    background: url(../images/arrow.svg) left 15px no-repeat;
+    border-bottom: 1px solid #fff;
   }
   .program-info h4 {
     margin-left: 10px;
@@ -357,11 +374,11 @@ Device-specific
   .program-info p, .program-info ul li {
     font-size: 1.5em;
     font-weight: 500;
-    letter-spacing: normal;
+    letter-spacing: .02em;
     hyphens: auto;
   }
   .program-info a.button {
-    margin-left: 0;
+    margin-left: 10px;
   }
 }
 @media (max-width: 960px) {
