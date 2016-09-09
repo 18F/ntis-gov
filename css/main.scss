@@ -224,15 +224,18 @@ h2, .hero p {
   display: inline;
   background-color: rgba(255, 255, 255, .6)
 }
-.program-info p {
+.program-info p, .program-info ul li {
   font: 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
   color: #fff;
   max-width: 640px;
   margin-left: 170px;
   padding-bottom: 30px;
 }
-.program-info p a:hover {
+.program-info p a:hover, .program-info ul li a:hover {
   border-bottom: 1px solid $primary-alt;
+}
+.program-info ul {
+  list-style-type: square;
 }
 .program-info h4 {
   color: $primary-alt-light;
@@ -295,10 +298,6 @@ address a:hover.social-icon {
   text-decoration: none;
   background-color: $primary-alt;
 }
-// address a.social-icon svg {
-//   width: 20px;
-//   height: 20px;
-// }
 footer .seal img {
   width: 90px;
   height: 90px;
@@ -348,9 +347,17 @@ Device-specific
     flex-grow: 0;
     margin-left: 0;
   }
-  .program-info p, .program-info h5 {
-    margin-left: 0;
+  .program-info h4 {
+    margin-left: 10px;
+  }
+  .program-info p, .program-info ul li, .program-info h5 {
+    margin-left: 10px;
     width: calc(100% - 20px);
+  }
+  .program-info p, .program-info ul li {
+    font-size: 1.5em;
+    font-weight: 600;
+    hyphens: auto;
   }
   .program-info a.button {
     margin-left: 0;
