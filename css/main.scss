@@ -37,7 +37,7 @@ body, h1, h2, h3, h4, h5, p, ul, li {
   padding: 0;
 }
 h1{
-
+  font: 1em/1.2 $serif;
 }
 h2 {
 
@@ -108,13 +108,8 @@ Layout
 --------------------------------*/
 #homepage, #about-us, #our-work, #partner {
   // background: url(../images/bridge-bg.jpg) no-repeat left -200px fixed;
-  background: url(../images/D8ijGd3CSGq4BxJ9EzTf_13976945916_fa0ce84ee3_o.jpg) no-repeat center 0 fixed;
+  background: url(../images/bridge-bg.jpg) no-repeat center 0 fixed;
   background-size: cover;
-}
-#about-us, #our-work, #partner {
-  // background: url(../images/mountain-bg.jpg) no-repeat center -600px fixed;
-  // background: url(../images/photo-1447159840826-a8be01f52eb8.jpeg) no-repeat fixed;
-  // background-size: cover;
 }
 .container-fluid {
   width: 100%;
@@ -148,12 +143,12 @@ Layout
   padding: 0 20px 30px 20px;
 }
 .masthead {
-  background: transparent url(../images/tile-blue.png) repeat;
+  background: transparent url(../images/tile-grey.png) repeat;
   min-height: 540px;
 }
-.hero header {
+// .hero header {
   // min-height: 360px;
-}
+// }
 .program-info {
   background-color: $primary-darkest;
   padding-bottom: 180px;
@@ -214,9 +209,9 @@ Typography
 .usa-site-header p {
   font-size: 11px;
 }
-.hero h1 {
-  margin-bottom: 30px;
-}
+// .hero h1 {
+//   margin-bottom: 30px;
+// }
 h2, .hero p {
   font: 400 2.5em/1.5 $sans-serif;
   letter-spacing: .02em;
@@ -226,11 +221,13 @@ h2, .hero p {
   background-color: rgba(255, 255, 255, .6)
 }
 .program-info p, .program-info ul li {
-  font: 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
+  font: 500 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
   color: #fff;
   max-width: 640px;
   margin-left: 170px;
   padding-bottom: 30px;
+  // -webkit-font-smoothing: antialiased;
+  // text-rendering: optimizeLegibility;
 }
 .program-info p a:hover, .program-info ul li a:hover {
   border-bottom: 1px solid $primary-alt;
@@ -272,9 +269,9 @@ address a {
 /* ------------------------------
 Components
 --------------------------------*/
-#homepage h1 img {
-  height: 60px;
-}
+// #homepage h1 img {
+//   height: 60px;
+// }
 .program-info a.button {
   padding: 12px 60px;
   border: 1px solid $primary-alt;
@@ -318,11 +315,12 @@ Device-specific
   }
 }
 @media (max-width: 800px) {
-  #homepage h1 img {
-    height: 40px;
-  }
-  #homepage {
-    background-size: auto;
+  // #homepage h1 img {
+  //   height: 40px;
+  // }
+  #homepage, #about-us, #our-work, #partner  {
+    background: url(../images/bridge-bg-sm.jpg) no-repeat center 0 fixed;
+    // background-size: auto;
   }
   nav, section, footer, .container {
     width: calc(100% - 20px);
