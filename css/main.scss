@@ -226,8 +226,8 @@ h2, .hero p {
   max-width: 640px;
   margin-left: 170px;
   padding-bottom: 30px;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  // text-rendering: optimizeLegibility;
 }
 .program-info p a:hover, .program-info ul li a:hover {
   border-bottom: 1px solid $primary-alt;
