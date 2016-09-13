@@ -30,4 +30,4 @@ We’re a 200-person organization dedicated to helping government ask questions 
 
 Our mission demands data-savvy people.  We’re looking for people who speak R, Python, and D3. Who dream in Databricks, Spark, and AWS. Who believe better data insights can lead to better public services.
 
-We don't have any open positions right now, but will soon!  In the meantime, check out other opportunities at the <a href="https://www.usajobs.gov/Search/?keyword=%22department%20of%20commerce%22">U.S. Department of Commerce</a>.
+We don't have any open positions right now, but will soon!  In the meantime, check out other opportunities at the <a href="https://www.usajobs.gov/JobSearch/Search/GetResults?organizationid=CM">U.S. Department of Commerce</a>.
