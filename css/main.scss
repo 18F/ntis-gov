@@ -40,14 +40,11 @@ h1{
   font: 1em/1.2 $serif;
 }
 h2 {
-
-}
-h3 {
   font-weight: 500;
   font-size: 1.5em;
   line-height: 1.25;
 }
-h4 {
+h3 {
   color: $primary-alt-light;
   font-size: .75em;
   font-weight: 400;
@@ -107,7 +104,6 @@ footer .seal {
 Layout
 --------------------------------*/
 #homepage, #about-us, #our-work, #partner {
-  // background: url(../images/bridge-bg.jpg) no-repeat left -200px fixed;
   background: url(../images/bridge-bg.jpg) no-repeat center 0 fixed;
   background-size: cover;
 }
@@ -146,9 +142,6 @@ Layout
   background: transparent url(../images/tile-grey.png) repeat;
   min-height: 540px;
 }
-// .hero header {
-  // min-height: 360px;
-// }
 .program-info {
   background-color: $primary-darkest;
   padding-bottom: 180px;
@@ -190,6 +183,7 @@ nav ul li a:hover {
 }
 nav ul li a.active {
   border-bottom: 3px solid #fff;
+  // background-color: rgba(255, 255, 255, .2);
   color: #fff;
 }
 nav ul li:first-child {
@@ -209,9 +203,6 @@ Typography
 .usa-site-header p {
   font-size: 11px;
 }
-// .hero h1 {
-//   margin-bottom: 30px;
-// }
 h2, .hero p {
   font: 400 2.5em/1.5 $sans-serif;
   letter-spacing: .02em;
@@ -235,7 +226,7 @@ h2, .hero p {
 .program-info ul {
   list-style-type: square;
 }
-.program-info h4 {
+.program-info h3 {
   color: $primary-alt-light;
   font-weight: 400;
   max-width: 200px;
@@ -245,7 +236,7 @@ h2, .hero p {
   padding-top: 20px;
   position: relative;
 }
-.program-info h4:before { // This adds a 60px-rule above
+.program-info h3:before { // This adds a 60px-rule above
   content: "";
   background-color: $primary-alt-light;
   position: absolute;
@@ -254,7 +245,7 @@ h2, .hero p {
   height: 1px;
   width: 60px;
 }
-.program-info h5 {
+.program-info h4 {
   font: 400 1em/2.25 $sans-serif;
   letter-spacing: .05em;
   margin: 15px 0 15px 170px;
@@ -269,9 +260,30 @@ address a {
 /* ------------------------------
 Components
 --------------------------------*/
-// #homepage h1 img {
-//   height: 60px;
-// }
+.skipnav {
+  background: transparent;
+  color: $primary;
+  left: 0;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: -4.2rem;
+  transition: all 0.2s ease-in-out;
+  z-index: 100;
+}
+.skipnav:focus {
+  background: #ffffff;
+  left: 0;
+  outline: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+}
+.usa-site-header a {
+  color: $primary;
+}
+.usa-site-header a:hover {
+  border-bottom: 1px solid $primary;
+}
 .program-info a.button {
   padding: 12px 60px;
   border: 1px solid $primary-alt;
