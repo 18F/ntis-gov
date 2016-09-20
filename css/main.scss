@@ -220,12 +220,6 @@ h2, .hero p {
   // -webkit-font-smoothing: antialiased;
   // text-rendering: optimizeLegibility;
 }
-.program-info p a:hover, .program-info ul li a:hover {
-  border-bottom: 1px solid $primary-alt;
-}
-.program-info ul {
-  list-style-type: square;
-}
 .program-info h3 {
   color: $primary-alt-light;
   font-weight: 400;
@@ -277,6 +271,21 @@ Components
   position: absolute;
   top: 0;
   transition: all 0.2s ease-in-out;
+}
+.program-info p a:hover, .program-info ul li a:hover {
+  border-bottom: 1px dotted $primary-alt;
+}
+.program-info ul {
+  list-style-type: square;
+}
+.program-info a[href ^="mailto:"] {
+  padding-right: 40px;
+  background: url(../images/email.svg) right center no-repeat;
+  background-size: 16%;
+}
+.program-info a[href $="pdf"] {
+  padding-right: 30px;
+  background: url(../images/pdf.svg) right center no-repeat;
 }
 .usa-site-header a {
   color: $primary;
