@@ -121,6 +121,7 @@ Layout
   left: 0;
   background-color: #fff;
   overflow: hidden;
+  z-index: 999;
 }
 .usa-site-header {
   max-width: 960px;
@@ -140,11 +141,12 @@ Layout
 }
 .masthead {
   background: transparent url(../images/tile-grey.png) repeat;
-  min-height: 540px;
+  min-height: 480px;
 }
 .program-info {
   background-color: $primary-darkest;
   padding-bottom: 180px;
+  z-index: 1;
   height: auto;
   overflow: hidden;
 }
@@ -209,7 +211,7 @@ h2, .hero p {
   max-width: 600px;
   padding: 2px;
   display: inline;
-  background-color: rgba(255, 255, 255, .6)
+  background-color: rgba(255, 255, 255, .6);
 }
 .program-info p, .program-info ul li {
   font: 500 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
@@ -262,7 +264,7 @@ Components
   position: absolute;
   top: -4.2rem;
   transition: all 0.2s ease-in-out;
-  z-index: 100;
+  // z-index: 100;
 }
 .skipnav:focus {
   background: #ffffff;
