@@ -17,7 +17,7 @@ We look for government partners with projects that need fast execution and requi
 
 ### Private industry
 
-We’re looking for the nation’s top private-sector companies, nonprofits, NGOs, and academic institutions. We fairly and rigorously select partners through an open competition. We chose partners who can: 
+We’re looking for the nation’s top private-sector companies, nonprofits, NGOs, and academic institutions. We fairly and rigorously select partners through an open competition. We choose partners who can: 
 
 - Integrate public and private data
 - Improve access, use, search, or interoperability of federal data
