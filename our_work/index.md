@@ -16,6 +16,6 @@ Our projects involve just the type of public-private cooperation that the strate
 
 ### Our process
 
-Our process begins with you. Our team works fast, in the open, and with Joint Venture Partners.  Together we'll build a new product or service.  We'll work with you to continuously improve it until it works.  In this public-private partnership, we adhere to the highest privacy and security standards: we support only trusted data networks; we follow rigorous privacy and security guidelines.
+Our process begins with you. Our team works fast, in the open, and with Joint Venture Partners.  Together we'll build a new product or service.  We'll work with you to continuously improve it until it meets your needs. In this public-private partnership, we adhere to the highest privacy and security standards: We support only trusted data networks; we follow rigorous privacy and security guidelines.
 
 Do you have a project in mind? <a href="mailto:info@ntis.gov?Subject=Project%20Inquiry" target="_top">Reach out to us</a>. We'll respond within 24 hours.
