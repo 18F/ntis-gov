@@ -74,7 +74,7 @@ header, section, footer {
 }
 header {
   margin: 0 auto;
-  padding: 60px 10px;
+  padding: 60px 0;
 }
 section {
   margin: 0 auto;
@@ -383,10 +383,10 @@ Device-specific
     background: url(../images/arrow.svg) left 15px no-repeat;
     border-bottom: 1px solid #fff;
   }
-  .program-info h4 {
+  .program-info h3 {
     margin-left: 10px;
   }
-  .program-info p, .program-info ul li, .program-info h5 {
+  .program-info p, .program-info ul li, .program-info h4 {
     margin-left: 10px;
     width: calc(100% - 20px);
   }
