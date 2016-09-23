@@ -18,12 +18,12 @@ Our projects involve just the type of public-private cooperation that the strate
 
 Our process begins with you. Our team works fast, in the open, and with Joint Venture Partners. Together we'll build a new product or service. We'll work with you to continuously improve it until it meets your needs. In this public-private partnership, we adhere to the highest privacy and security standards: We support only trusted data networks; we follow rigorous privacy and security guidelines.
 
-For agencies, this means the process looks something like this:
+For agencies, the process looks something like this:
 
-1. You identify a need, and we review it.  If it looks promising, we start to identify partners.
+1. You identify a need, and we review it. We start to identify partners.
 2. We work with you to develop objectives and evaluation criteria.
-3. Our partners review the objectives and criteria, and prepare a response.  This can include oral presenations and demonstrations.
-4. We present the project to our advisory board.  If approved, we notify the team and develop the project plan.
-5. Paperwork is signed, and funds are obligated.  Work begins.
+3. Our partners prepare a response to the objectives and evaluation critera. This can include oral presenations and demonstrations.
+4. We present the project to our advisory board for approval. We notify your team and develop a project plan.
+5. Paperwork is signed, and funds are obligated. Work begins.
 
 Do you have a project in mind? <a href="mailto:info@ntis.gov?Subject=Project%20Inquiry" target="_top">Reach out to us</a>. We'll respond within 24 hours.
