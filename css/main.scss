@@ -14,6 +14,7 @@ $base: #212121;
 $primary: #0071bc;
 $primary-alt: #02bfe7;  // bright blue
 $primary-alt-light: #9bdaf1;  // light blue
+$primary-alt-lightest: #e1f3f8;
 $primary-alt-dark: #00a6d2;
 $primary-darkest: #112e51;  // dark blue
 $primary-alt-darkest: #046b99;
@@ -24,6 +25,7 @@ $gray-cool-light: #dce4ef;
 $gray-warm-light: #e4e2e0;
 $gray-warm-lightest: #eee;
 $gray-light: #aeb0b5;
+$gold-lighter: #fad980;
 $gold-lightest: #fff1d2;
 
 /* ------------------------------
@@ -166,7 +168,7 @@ Layout
   min-height: 480px;
 }
 .program-info {
-  background-color: $primary-darkest;
+  // background-color: $primary-darkest;
   padding-bottom: 180px;
   z-index: 1;
   height: auto;
@@ -254,7 +256,7 @@ h2, .hero p {
   // -webkit-font-smoothing: antialiased;
   // text-rendering: optimizeLegibility;
 }
-.program-info h3 {
+.program-info.primary-darkest h3 {
   color: $primary-alt-light;
   font-size: .75em;
   font-weight: 400;
@@ -320,6 +322,49 @@ h2, .hero p {
   display: block;
   margin-top: 4em;
   color: $secondary-darkest;
+}
+// .program-info.primary-alt-darkest section h3 {
+//   max-width: 360px;
+// }
+.program-info.primary-alt-darkest section h3 {
+  font-size: 1.625em;
+  font-weight: 300;
+  // font: 400 1em/2.25 $sans-serif;
+  // letter-spacing: .05em;
+  margin: 150px 0 60px 170px;
+  color: #fff;
+  position: relative;
+  padding-top: 30px;
+}
+.program-info.primary-alt-darkest section h3:before {
+  content: "";
+  background-color: $primary-alt-light;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 60px;
+}
+.program-info.primary-alt-darkest section h3 span.sm-subhead {
+  display: block;
+  color: $primary-alt-light;
+}
+// .program-info.primary-alt-darkest section h4:first-child {
+  // margin-top: 15px;
+// }
+.program-info.primary-alt-darkest section p.eyebrow {
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  font-size: .625em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  padding: 15px 0;
+  color: $primary-alt-light;
+  // margin-bottom: .625em;
+}
+.program-info.primary-alt-darkest section a {
+  color: $gold-lighter;
+  border-bottom: 1px solid $gold-lighter;
 }
 address p {
   margin-bottom: 12px;
@@ -486,7 +531,7 @@ Device-specific
   .program-info h3 {
     margin-left: 10px;
   }
-  .program-info p, .program-info ul li, .program-info h4 {
+  .program-info p, .program-info ul li, .program-info h4, .program-info.primary-alt-darkest section h3 {
     margin-left: 10px;
     width: calc(100% - 20px);
   }
