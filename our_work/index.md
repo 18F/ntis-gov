@@ -1,5 +1,5 @@
 ---
-layout: subpage
+layout: casestudy
 title: Our work
 id: our-work
 summary: We help federal agencies put their data to work
@@ -22,7 +22,7 @@ For agencies, the process looks something like this:
 
 1. You identify a need, and we review it. We start to identify partners.
 2. We work with you to develop objectives and evaluation criteria.
-3. Our partners prepare a response to the objectives and evaluation critera. This can include oral presenations and demonstrations.
+3. Our partners prepare a response to the objectives and evaluation criteria. This can include oral presentations and demonstrations.
 4. We present the project to our advisory board.  If approved, we notify your team and develop a project plan.
 5. Paperwork is signed, and funds are obligated. Work begins.
 

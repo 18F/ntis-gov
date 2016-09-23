@@ -10,12 +10,27 @@ $serif: 'Cormorant Garamond', Georgia, serif;
 /* ------------------------------
 Variables: Colors
 --------------------------------*/
+$base: #212121;
 $primary: #0071bc;
 $primary-alt: #02bfe7;  // bright blue
 $primary-alt-light: #9bdaf1;  // light blue
+$primary-alt-lightest: #e1f3f8;
+$primary-alt-dark: #00a6d2;
 $primary-darkest: #112e51;  // dark blue
+$primary-alt-darkest: #046b99;
 $secondary-dark: #cd2026;   // red
+$secondary-darkest: #981b1e;
+$gray-warm-dark: #494440;
 $gray-cool-light: #dce4ef;
+$gray-warm-light: #e4e2e0;
+$gray-warm-lightest: #eee;
+$gray-light: #aeb0b5;
+$gold-lighter: #fad980;
+$gold-lightest: #fff1d2;
+
+/* ------------------------------
+Extends
+--------------------------------*/
 
 /* ------------------------------
 Base styles
@@ -25,14 +40,14 @@ Base styles
 }
 body {
   font-family: $sans-serif;
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -moz-font-feature-settings: "liga", "dlig";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig";
+  // -webkit-font-feature-settings: "liga", "dlig";
+  // -moz-font-feature-settings: "liga=1, dlig=1";
+  // -moz-font-feature-settings: "liga", "dlig";
+  // -ms-font-feature-settings: "liga", "dlig";
+  // -o-font-feature-settings: "liga", "dlig";
+  // font-feature-settings: "liga", "dlig";
 }
-body, h1, h2, h3, h4, h5, p, ul, li {
+body, h1, h2, h3, h4, h5, p, ul, ol, li {
   margin: 0;
   padding: 0;
 }
@@ -45,18 +60,7 @@ h2 {
   line-height: 1.25;
 }
 h3 {
-  color: $primary-alt-light;
-  font-size: .75em;
-  font-weight: 400;
-  line-height: 2;
-  max-width: 200px;
-  display: block;
-  margin-top: 120px;
-  margin-bottom: 60px;
-  padding-top: 20px;
-  position: relative;
-  letter-spacing: .0825em;
-  text-transform: uppercase;
+
 }
 p {
   font-size: .875em;
@@ -110,7 +114,27 @@ Layout
 .container-fluid {
   width: 100%;
   height: auto;
+  background-color: #fff;
 }
+.gray-warm-light {
+  background-color: $gray-warm-light;
+}
+.gray-warm-lightest {
+  background-color: $gray-warm-lightest;
+}
+.gray-cool-light {
+  background-color: $gray-cool-light;
+}
+.gray-bg {
+  background: transparent url(../images/tile-grey.png) repeat;
+}
+.primary-darkest {
+  background-color: $primary-darkest;
+}
+.primary-alt-darkest {
+  background-color: $primary-alt-darkest;
+}
+
 .container {
   margin: 0 auto;
   max-width: 960px;
@@ -140,15 +164,25 @@ Layout
   padding: 0 20px 30px 20px;
 }
 .masthead {
-  background: transparent url(../images/tile-grey.png) repeat;
+  @extend .gray-bg;
   min-height: 480px;
 }
 .program-info {
-  background-color: $primary-darkest;
+  // background-color: $primary-darkest;
   padding-bottom: 180px;
   z-index: 1;
   height: auto;
   overflow: hidden;
+}
+.case-studies {
+  display: flex;
+  flex-direction: row;
+  padding: 60px 0 120px 0;
+}
+.case-studies section {
+  align-items: stretch;
+  // padding: 20px;
+  flex-basis: 33.33%;
 }
 /* ------------------------------
 Navigation
@@ -185,8 +219,8 @@ nav ul li a:hover {
 }
 nav ul li a.active {
   border-bottom: 3px solid #fff;
-  // background-color: rgba(255, 255, 255, .2);
   color: #fff;
+  // color: $primary-alt-light;
 }
 nav ul li:first-child {
   flex-grow: 2;
@@ -213,7 +247,7 @@ h2, .hero p {
   display: inline;
   background-color: rgba(255, 255, 255, .6);
 }
-.program-info p, .program-info ul li {
+.program-info p, .program-info ul li, .program-info ol li {
   font: 500 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
   color: #fff;
   max-width: 640px;
@@ -222,8 +256,15 @@ h2, .hero p {
   // -webkit-font-smoothing: antialiased;
   // text-rendering: optimizeLegibility;
 }
-.program-info h3 {
+.program-info.primary-darkest h3 {
   color: $primary-alt-light;
+  font-size: .75em;
+  font-weight: 400;
+  line-height: 2;
+  max-width: 200px;
+  position: relative;
+  letter-spacing: .0825em;
+  text-transform: uppercase;
   font-weight: 400;
   max-width: 200px;
   display: block;
@@ -247,6 +288,84 @@ h2, .hero p {
   margin: 15px 0 15px 170px;
   color: $gray-cool-light;
 }
+.case-studies section h3, .case-studies section p {
+}
+.case-studies section h3 {
+  // margin-bottom: .825em;
+  min-height: 5em;
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1.325;
+  color: $gray-warm-dark;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid $gray-warm-dark;
+}
+.case-studies section p {
+  font-size: .825em;
+  line-height: 1.625;
+  margin-bottom: 1.5em;
+  min-height: 4em;
+  align-self: flex-start;
+  word-wrap: break-word;
+  padding-right: 20px;
+  // color: $gray-warm-dark;
+}
+.case-studies section p.eyebrow {
+  text-transform: uppercase;
+  font-size: .5em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  margin-bottom: .625em;
+  min-height: 2em;
+  display: block;
+  margin-top: 4em;
+  color: $secondary-darkest;
+}
+// .program-info.primary-alt-darkest section h3 {
+//   max-width: 360px;
+// }
+.program-info.primary-alt-darkest section h3 {
+  font-size: 1.625em;
+  font-weight: 300;
+  // font: 400 1em/2.25 $sans-serif;
+  // letter-spacing: .05em;
+  margin: 150px 0 60px 170px;
+  color: #fff;
+  position: relative;
+  padding-top: 30px;
+}
+.program-info.primary-alt-darkest section h3:before {
+  content: "";
+  background-color: $primary-alt-light;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 60px;
+}
+.program-info.primary-alt-darkest section h3 span.sm-subhead {
+  display: block;
+  color: $primary-alt-light;
+}
+// .program-info.primary-alt-darkest section h4:first-child {
+  // margin-top: 15px;
+// }
+.program-info.primary-alt-darkest section p.eyebrow {
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  font-size: .625em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  padding: 15px 0;
+  color: $primary-alt-light;
+  // margin-bottom: .625em;
+}
+.program-info.primary-alt-darkest section a {
+  color: $gold-lighter;
+  border-bottom: 1px solid $gold-lighter;
+}
 address p {
   margin-bottom: 12px;
 }
@@ -263,8 +382,7 @@ Components
   padding: 1rem 1.5rem;
   position: absolute;
   top: -4.2rem;
-  transition: all 0.2s ease-in-out;
-  // z-index: 100;
+  // transition: all 0.2s ease-in-out;
 }
 .skipnav:focus {
   background: #ffffff;
@@ -272,7 +390,7 @@ Components
   outline: 0;
   position: absolute;
   top: 0;
-  transition: all 0.2s ease-in-out;
+  // transition: all 0.2s ease-in-out;
 }
 .program-info p a:hover, .program-info ul li a:hover {
   border-bottom: 1px dotted $primary-alt;
@@ -290,7 +408,7 @@ Components
   background: url(../images/pdf.svg) right center no-repeat;
 }
 .usa-site-header a {
-  color: $primary;
+  color: $primary-alt-dark;
 }
 .usa-site-header a:hover {
   border-bottom: 1px solid $primary;
@@ -305,6 +423,14 @@ Components
 }
 .program-info a:hover.button {
   color: #fff;
+}
+.case-studies a {
+  color: $primary-alt-darkest;
+  font-weight: 500;
+  border-bottom: 1px dotted $primary-alt-darkest;
+}
+.case-studies a:hover {
+  border-bottom: 1px solid $primary-alt-darkest;
 }
 address a.social-icon {
   display: inline-block;
@@ -361,6 +487,23 @@ Device-specific
     float: none;
     padding-left: 10px;
   }
+  .case-studies {
+    flex-direction: column;
+  }
+  .case-studies section p:first-child {
+    border-top: 1px solid $gray-warm-dark;
+    padding-top: 6em;
+  }
+  .case-studies section p:last-child {
+    padding-bottom: 3em;
+  }
+  .case-studies section:first-child p {
+    border-top: none;
+  }
+  .case-studies section h3 {
+    min-height: auto;
+    border-bottom: none;
+  }
   nav ul, nav ul li, nav ul li a {
     width: 100%;
   }
@@ -388,7 +531,7 @@ Device-specific
   .program-info h3 {
     margin-left: 10px;
   }
-  .program-info p, .program-info ul li, .program-info h4 {
+  .program-info p, .program-info ul li, .program-info h4, .program-info.primary-alt-darkest section h3 {
     margin-left: 10px;
     width: calc(100% - 20px);
   }
