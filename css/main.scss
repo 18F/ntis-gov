@@ -10,12 +10,23 @@ $serif: 'Cormorant Garamond', Georgia, serif;
 /* ------------------------------
 Variables: Colors
 --------------------------------*/
+$base: #212121;
 $primary: #0071bc;
 $primary-alt: #02bfe7;  // bright blue
 $primary-alt-light: #9bdaf1;  // light blue
 $primary-darkest: #112e51;  // dark blue
+$primary-alt-darkest: #046b99;
 $secondary-dark: #cd2026;   // red
+$secondary-darkest: #981b1e;
+$gray-warm-dark: #494440;
 $gray-cool-light: #dce4ef;
+$gray-warm-light: #e4e2e0;
+$gray-light: #aeb0b5;
+$gold-lightest: #fff1d2;
+
+/* ------------------------------
+Extends
+--------------------------------*/
 
 /* ------------------------------
 Base styles
@@ -35,6 +46,7 @@ body {
 body, h1, h2, h3, h4, h5, p, ul, li {
   margin: 0;
   padding: 0;
+  color: $base;
 }
 h1{
   font: 1em/1.2 $serif;
@@ -45,18 +57,7 @@ h2 {
   line-height: 1.25;
 }
 h3 {
-  color: $primary-alt-light;
-  font-size: .75em;
-  font-weight: 400;
-  line-height: 2;
-  max-width: 200px;
-  display: block;
-  margin-top: 120px;
-  margin-bottom: 60px;
-  padding-top: 20px;
-  position: relative;
-  letter-spacing: .0825em;
-  text-transform: uppercase;
+
 }
 p {
   font-size: .875em;
@@ -110,7 +111,24 @@ Layout
 .container-fluid {
   width: 100%;
   height: auto;
+  background-color: #fff;
 }
+.gray-warm-light {
+  background-color: $gray-warm-light;
+}
+.gray-cool-light {
+  background-color: $gray-cool-light;
+}
+.gray-bg {
+  background: transparent url(../images/tile-grey.png) repeat;
+}
+.primary-darkest {
+  background-color: $primary-darkest;
+}
+.primary-alt-darkest {
+  background-color: $primary-alt-darkest;
+}
+
 .container {
   margin: 0 auto;
   max-width: 960px;
@@ -140,7 +158,7 @@ Layout
   padding: 0 20px 30px 20px;
 }
 .masthead {
-  background: transparent url(../images/tile-grey.png) repeat;
+  @extend .gray-bg;
   min-height: 480px;
 }
 .program-info {
@@ -149,6 +167,18 @@ Layout
   z-index: 1;
   height: auto;
   overflow: hidden;
+}
+.case-studies {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0 60px 0;
+}
+.case-studies section {
+  align-items: stretch;
+  // padding: 20px;
+  flex-basis: 33.33%;
+  // background-color: $gray-warm-light;
+  // border-top: 2px solid $primary;
 }
 /* ------------------------------
 Navigation
@@ -224,6 +254,13 @@ h2, .hero p {
 }
 .program-info h3 {
   color: $primary-alt-light;
+  font-size: .75em;
+  font-weight: 400;
+  line-height: 2;
+  max-width: 200px;
+  position: relative;
+  letter-spacing: .0825em;
+  text-transform: uppercase;
   font-weight: 400;
   max-width: 200px;
   display: block;
@@ -246,6 +283,41 @@ h2, .hero p {
   letter-spacing: .05em;
   margin: 15px 0 15px 170px;
   color: $gray-cool-light;
+}
+.case-studies section h3, .case-studies section p {
+}
+.case-studies section h3 {
+  // margin-bottom: .825em;
+  min-height: 5em;
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1.325;
+  color: $gray-warm-dark;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid $gray-warm-dark;
+}
+.case-studies section p {
+  font-size: .825em;
+  line-height: 1.625;
+  margin-bottom: 1.5em;
+  min-height: 4em;
+  align-self: flex-start;
+  word-wrap: break-word;
+  padding-right: 20px;
+  // color: $gray-warm-dark;
+}
+.case-studies section p.eyebrow {
+  text-transform: uppercase;
+  font-size: .5em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  margin-bottom: .625em;
+  min-height: 2em;
+  display: block;
+  margin-top: 4em;
+  color: $secondary-darkest;
 }
 address p {
   margin-bottom: 12px;

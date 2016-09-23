@@ -1,5 +1,5 @@
 ---
-layout: subpage
+layout: casestudy
 title: Our work
 id: our-work
 summary: We help federal agencies put their data to work
