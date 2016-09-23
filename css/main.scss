@@ -22,6 +22,7 @@ $secondary-darkest: #981b1e;
 $gray-warm-dark: #494440;
 $gray-cool-light: #dce4ef;
 $gray-warm-light: #e4e2e0;
+$gray-warm-lightest: #eee;
 $gray-light: #aeb0b5;
 $gold-lightest: #fff1d2;
 
@@ -117,6 +118,9 @@ Layout
 .gray-warm-light {
   background-color: $gray-warm-light;
 }
+.gray-warm-lightest {
+  background-color: $gray-warm-lightest;
+}
 .gray-cool-light {
   background-color: $gray-cool-light;
 }
@@ -172,7 +176,7 @@ Layout
 .case-studies {
   display: flex;
   flex-direction: row;
-  padding: 60px 0;
+  padding: 60px 0 120px 0;
 }
 .case-studies section {
   align-items: stretch;
@@ -214,8 +218,8 @@ nav ul li a:hover {
 }
 nav ul li a.active {
   border-bottom: 3px solid #fff;
-  // background-color: rgba(255, 255, 255, .2);
   color: #fff;
+  // color: $primary-alt-light;
 }
 nav ul li:first-child {
   flex-grow: 2;
@@ -334,8 +338,7 @@ Components
   padding: 1rem 1.5rem;
   position: absolute;
   top: -4.2rem;
-  transition: all 0.2s ease-in-out;
-  // z-index: 100;
+  // transition: all 0.2s ease-in-out;
 }
 .skipnav:focus {
   background: #ffffff;
@@ -343,7 +346,7 @@ Components
   outline: 0;
   position: absolute;
   top: 0;
-  transition: all 0.2s ease-in-out;
+  // transition: all 0.2s ease-in-out;
 }
 .program-info p a:hover, .program-info ul li a:hover {
   border-bottom: 1px dotted $primary-alt;
@@ -381,6 +384,9 @@ Components
   color: $primary-alt-darkest;
   font-weight: 500;
   border-bottom: 1px dotted $primary-alt-darkest;
+}
+.case-studies a:hover {
+  border-bottom: 1px solid $primary-alt-darkest;
 }
 address a.social-icon {
   display: inline-block;
