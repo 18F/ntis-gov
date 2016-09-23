@@ -14,6 +14,7 @@ $base: #212121;
 $primary: #0071bc;
 $primary-alt: #02bfe7;  // bright blue
 $primary-alt-light: #9bdaf1;  // light blue
+$primary-alt-dark: #00a6d2;
 $primary-darkest: #112e51;  // dark blue
 $primary-alt-darkest: #046b99;
 $secondary-dark: #cd2026;   // red
@@ -171,14 +172,12 @@ Layout
 .case-studies {
   display: flex;
   flex-direction: row;
-  padding: 30px 0 60px 0;
+  padding: 60px 0;
 }
 .case-studies section {
   align-items: stretch;
   // padding: 20px;
   flex-basis: 33.33%;
-  // background-color: $gray-warm-light;
-  // border-top: 2px solid $primary;
 }
 /* ------------------------------
 Navigation
@@ -362,7 +361,7 @@ Components
   background: url(../images/pdf.svg) right center no-repeat;
 }
 .usa-site-header a {
-  color: $primary;
+  color: $primary-alt-dark;
 }
 .usa-site-header a:hover {
   border-bottom: 1px solid $primary;
@@ -377,6 +376,11 @@ Components
 }
 .program-info a:hover.button {
   color: #fff;
+}
+.case-studies a {
+  color: $primary-alt-darkest;
+  font-weight: 500;
+  border-bottom: 1px dotted $primary-alt-darkest;
 }
 address a.social-icon {
   display: inline-block;
@@ -432,6 +436,23 @@ Device-specific
   .usa-disclaimer, .usa-site-header .usa-disclaimer-stage {
     float: none;
     padding-left: 10px;
+  }
+  .case-studies {
+    flex-direction: column;
+  }
+  .case-studies section p:first-child {
+    border-top: 1px solid $gray-warm-dark;
+    padding-top: 6em;
+  }
+  .case-studies section p:last-child {
+    padding-bottom: 3em;
+  }
+  .case-studies section:first-child p {
+    border-top: none;
+  }
+  .case-studies section h3 {
+    min-height: auto;
+    border-bottom: none;
   }
   nav ul, nav ul li, nav ul li a {
     width: 100%;
