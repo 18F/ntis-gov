@@ -22,7 +22,7 @@ For agencies, this means the process looks something like this:
 
 1. You identify a need, and we review it.  If it looks promising, we start to identify partners.
 2. We work with you to develop objectives and evaluation criteria.
-3. Our partners review the objectives and criteria, and prepare a response.  This can include oral presenations and demonstrations.
+3. Our partners review the objectives and criteria, and prepare a response.  This can include oral presentations and demonstrations.
 4. We present the project to our advisory board.  If approved, we notify the team and develop the project plan.
 5. Paperwork is signed, and funds are obligated.  Work begins.
 
