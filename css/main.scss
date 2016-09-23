@@ -45,10 +45,9 @@ body {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
 }
-body, h1, h2, h3, h4, h5, p, ul, li {
+body, h1, h2, h3, h4, h5, p, ul, ol, li {
   margin: 0;
   padding: 0;
-  color: $base;
 }
 h1{
   font: 1em/1.2 $serif;
@@ -246,7 +245,7 @@ h2, .hero p {
   display: inline;
   background-color: rgba(255, 255, 255, .6);
 }
-.program-info p, .program-info ul li {
+.program-info p, .program-info ul li, .program-info ol li {
   font: 500 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
   color: #fff;
   max-width: 640px;
