@@ -172,7 +172,6 @@ Layout
   min-height: 480px;
 }
 .program-info {
-  // background-color: $primary-darkest;
   padding-bottom: 180px;
   z-index: 1;
   height: auto;
@@ -180,12 +179,13 @@ Layout
 }
 .case-studies {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   padding: 60px 0 120px 0;
+  height: auto;
+  overflow: hidden;
 }
 .case-studies section {
   align-items: stretch;
-  // padding: 20px;
   flex-basis: 33.33%;
 }
 /* ------------------------------
@@ -226,7 +226,6 @@ nav ul li a:hover {
 nav ul li a.active {
   border-bottom: 3px solid #fff;
   color: #fff;
-  // color: $primary-alt-light;
 }
 nav ul li:first-child {
   flex-grow: 2;
@@ -294,10 +293,8 @@ h2, .hero p {
   margin: 15px 0 15px 170px;
   color: $gray-cool-light;
 }
-.case-studies section h3, .case-studies section p {
-}
+// Styles for 3-col case studies
 .case-studies section h3 {
-  // margin-bottom: .825em;
   min-height: 5em;
   align-self: flex-start;
   font: 600 1.5em/1.325 $sans-serif;
@@ -305,73 +302,68 @@ h2, .hero p {
   padding-bottom: .5em;
   margin-bottom: 1em;
   border-bottom: 1px solid $gray-warm-dark;
+  -webkit-font-smoothing: antialiased;
 }
 .case-studies section p {
-  font-size: .825em;
+  font-size: .8em;
+  font-weight: 400;
   line-height: 1.625;
   margin-bottom: 1.5em;
   min-height: 4em;
   align-self: flex-start;
   word-wrap: break-word;
   padding-right: 20px;
-  // color: $gray-warm-dark;
+  -webkit-font-smoothing: antialiased;
+
 }
 .case-studies section p.eyebrow {
   text-transform: uppercase;
   font-size: .5em;
   font-weight: 600;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   margin-bottom: .625em;
   min-height: 2em;
   display: block;
   margin-top: 4em;
   color: $secondary-darkest;
 }
+// Styles for 1-col case studies
 // .program-info.primary-alt-darkest section h3 {
-//   max-width: 360px;
+//   font-size: 1.625em;
+//   font-weight: 300;
+//   margin: 150px 0 60px 170px;
+//   color: #fff;
+//   position: relative;
+//   padding-top: 30px;
+//   -webkit-font-smoothing: antialiased;
+//   text-rendering: optimizeLegibility;
 // }
-.program-info.primary-alt-darkest section h3 {
-  font-size: 1.625em;
-  font-weight: 300;
-  // font: 400 1em/2.25 $sans-serif;
-  // letter-spacing: .05em;
-  margin: 150px 0 60px 170px;
-  color: #fff;
-  position: relative;
-  padding-top: 30px;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-.program-info.primary-alt-darkest section h3:before {
-  content: "";
-  background-color: $primary-alt-light;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2px;
-  width: 60px;
-}
-.program-info.primary-alt-darkest section h3 span.sm-subhead {
-  display: block;
-  color: $primary-alt-light;
-}
-// .program-info.primary-alt-darkest section h4:first-child {
-  // margin-top: 15px;
+// .program-info.primary-alt-darkest section h3:before {
+//   content: "";
+//   background-color: $primary-alt-light;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 2px;
+//   width: 60px;
 // }
-.program-info.primary-alt-darkest section p.eyebrow {
-  font-family: $sans-serif;
-  text-transform: uppercase;
-  font-size: .625em;
-  font-weight: 600;
-  letter-spacing: .1em;
-  padding: 15px 0;
-  color: $primary-alt-light;
-  // margin-bottom: .625em;
-}
-.program-info.primary-alt-darkest section a {
-  color: $gold-lighter;
-  border-bottom: 1px solid $gold-lighter;
-}
+// .program-info.primary-alt-darkest section h3 span.sm-subhead {
+//   display: block;
+//   color: $primary-alt-light;
+// }
+// .program-info.primary-alt-darkest section p.eyebrow {
+//   font-family: $sans-serif;
+//   text-transform: uppercase;
+//   font-size: .625em;
+//   font-weight: 600;
+//   letter-spacing: .1em;
+//   padding: 15px 0;
+//   color: $primary-alt-light;
+// }
+// .program-info.primary-alt-darkest section a {
+//   color: $gold-lighter;
+//   border-bottom: 1px solid $gold-lighter;
+// }
 address p {
   margin-bottom: 12px;
 }
@@ -430,6 +422,7 @@ Components
 .program-info a:hover.button {
   color: #fff;
 }
+// Styles for 3-col case studies
 .case-studies a {
   color: $primary-alt-darkest;
   font-weight: 500;
@@ -475,7 +468,6 @@ Device-specific
   // }
   #homepage, #about-us, #our-work, #partner  {
     background: url(../images/bridge-bg-sm.jpg) no-repeat center 0 fixed;
-    // background-size: auto;
   }
   nav, section, footer, .container {
     width: calc(100% - 20px);
@@ -525,7 +517,6 @@ Device-specific
   }
   nav ul li a {
     min-height: 40px;
-    // padding-left: 20px;
     padding: 10px 0 0 20px;
     background: none;
   }
@@ -537,14 +528,6 @@ Device-specific
     background: url(../images/arrow.svg) left 15px no-repeat;
     border-bottom: 1px solid #fff;
   }
-  // #our-work .program-info ol {
-    // flex-direction: column;
-    // display: flex;
-    // counter-reset: li;
-    // list-style:none;
-    // margin-top: 20px;
-    // margin-bottom: 90px;
-  // }
   .program-info h3 {
     margin-left: 10px;
   }
@@ -555,14 +538,14 @@ Device-specific
   .program-info p, .program-info ul li, .program-info ol li {
     font-size: 1.5em;
     font-weight: 500;
-    letter-spacing: .02em;
+    letter-spacing: normal;
     hyphens: auto;
   }
   .program-info a.button {
     margin-left: 10px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 800px) { // styles for enhanced process
   #our-work .program-info ol {
     display: flex;
     flex-direction: row;
@@ -595,16 +578,16 @@ Device-specific
     counter-increment: li;
     top: 20px;
     left: 50px;
-    font-size: 1.5em;
-    font-family: 'Roboto Mono', Arial, monospace;
+    // font-size: 1.5em;
+    font: 700 1.5em/1.5 'Roboto Mono', Arial, monospace;
     border: 1px solid $primary-alt;
     color: $primary-alt;
     // background-color: $primary-darker;
-    width: 31px;
-    height: 40px;
-    border-radius: 25px;
-    padding-left: 19px;
-    padding-top: 10px;
+    width: 29px;
+    height: 38px;
+    border-radius: 26px;
+    padding-left: 18px;
+    padding-top: 8px;
   }
 }
 @media (max-width: 960px) {
@@ -612,9 +595,3 @@ Device-specific
     margin-left: 12px;
   }
 }
-
-// @media (min-width: 2561px) {
-//   #homepage, #about-us, #our-work, #partner {
-//     background-size: cover;
-//   }
-// }
