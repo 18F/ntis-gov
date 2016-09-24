@@ -253,13 +253,13 @@ h2, .hero p {
   background-color: rgba(255, 255, 255, .6);
 }
 .program-info p, .program-info ul li, .program-info ol li {
-  font: 500 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
+  font: 300 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
   color: #fff;
   max-width: 640px;
   margin-left: 170px;
   padding-bottom: 30px;
-  // -webkit-font-smoothing: antialiased;
-  // text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
 }
 .program-info.primary-darkest h3 {
   color: $primary-alt-light;
