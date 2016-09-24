@@ -486,10 +486,10 @@ Device-specific
     padding-left: 10px;
   }
   .case-studies {
-    flex-direction: column;
+    display: block;
   }
   .case-studies section {
-    flex-basis: 100%;
+    width: 100%;
   }
   .case-studies section p:first-child {
     border-top: 1px solid $gray-warm-dark;
