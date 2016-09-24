@@ -496,6 +496,9 @@ Device-specific
   .case-studies {
     flex-direction: column;
   }
+  .case-studies section {
+    flex-basis: 100%;
+  }
   .case-studies section p:first-child {
     border-top: 1px solid $gray-warm-dark;
     padding-top: 6em;
