@@ -5,7 +5,7 @@
 Variables: Typography
 --------------------------------*/
 $sans-serif: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$serif: 'Cormorant Garamond', Georgia, serif;
+$serif: 'Cormorant Garamond', 'Times New Roman', Times, serif;
 
 /* ------------------------------
 Variables: Colors
@@ -485,12 +485,13 @@ Device-specific
   }
   .case-studies {
     display: block;
+    padding-left: 10px;
   }
   .case-studies section {
     width: 100%;
   }
   .case-studies section p {
-    font-size: 1em;
+    font-size: 1.125em;
     // font: 400 .8em/1.625 $sans-serif;
     // margin-bottom: 1.5em;
     // min-height: 4em;
