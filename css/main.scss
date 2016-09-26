@@ -258,7 +258,7 @@ h2, .hero p {
   padding-bottom: 30px;
 }
 .program-info p, .program-info ul li {
-  // text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
   // text-rendering: geometricPrecision;
   // font-smooth: always;
   // font-smoothing: antialiased;
@@ -585,11 +585,12 @@ Device-specific
   #our-work .program-info ol > li {
     align-items: stretch;
     width: 20%;
-    font: 400 .7em/1.5 $sans-serif;
+    font: 300 .6325em/1.5 $sans-serif;
     margin: 0;
-    padding: 100px 10px 0 10px;
+    padding: 100px 15px 0 10px;
     -webkit-font-smoothing: antialiased;
-    // text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
     position: relative;
     word-wrap: break-word;
   }
