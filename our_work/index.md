@@ -16,11 +16,11 @@ Our projects involve just the type of public-private cooperation that the strate
 
 ### Our process
 
-Our process begins with you. Our team works fast, in the open, and with Joint Venture Partners. Together we'll build a new product or service. We'll work with you to continuously improve it until it meets your needs. 
+Our process begins with you. Our team works fast, in the open, and with Joint Venture Partners. Together we'll build a new product or service, working continuously to improve it until it meets the prjoect's needs. 
 
-For agencies, the process looks something like this:
+For federal agencies, the process looks something like this:
 
-1. You identify a need, and we review it. We start to identify partners.
+1. Your agency identifies a need, and we review it. We start to identify partners.
 2. We work with you to develop objectives and evaluation criteria.
 3. We work with our partners prepare a response to the objectives and evaluation criteria. This can include oral presentations and demonstrations.
 4. We present the project to our advisory board.  If approved, we notify your team and develop a project plan.
