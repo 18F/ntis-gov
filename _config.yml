@@ -27,3 +27,8 @@ url: "https://18f.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 theme: minima
+
+# Markdown processors
+# markdown: redcarpet
+redcarpet:
+  extensions: ["smart"]
