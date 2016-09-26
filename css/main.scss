@@ -353,7 +353,7 @@ nav.links:before {
   width: 60px;
 }
 nav.links a:visited {
-  color: $primary-alt-light;
+  color: $primary-alt-light
 }
 #our-work .program-info ol {
   margin-left: 34px;
@@ -558,6 +558,9 @@ Device-specific
   .case-studies section h3 {
     min-height: auto;
     border-bottom: none;
+  }
+  nav.links:before {
+    left: 30px;
   }
   nav ul, nav ul li, nav ul li a {
     width: 100%;
