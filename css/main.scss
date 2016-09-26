@@ -352,6 +352,9 @@ nav.links:before {
   height: 1px;
   width: 60px;
 }
+nav.links a:visited {
+  color: $primary-alt-light;
+}
 #our-work .program-info ol {
   margin-left: 34px;
 }
