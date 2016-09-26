@@ -10,7 +10,7 @@ summary: Transforming data into valuable public services
 
 We're part of &ldquo;America’s Data Agency,&rdquo; the Department of Commerce.
 
-We help federal agencies make better decisions about data, with data. We provide the support and structure that helps our partners securely store, analyze, sort, and aggregate data in new ways. We use our private-sector partners' knowledge to create new ways of using data to solve problems. Our Joint Venture program works side-by-side with universities, nonprofits and industry professionals --- together, they can experiment with data science technologies before they’re available in the marketplace.
+We help federal agencies make better decisions about data, with data. We provide the support and structure that helps our partners securely store, analyze, sort, and aggregate data in new ways. We use our private-sector partners' knowledge to create new ways of using data to solve problems. 
 
 ### Our history
 
