@@ -256,8 +256,15 @@ h2, .hero p {
   max-width: 640px;
   margin-left: 170px;
   padding-bottom: 30px;
+}
+.program-info p, .program-info ul li {
+  // text-rendering: optimizeLegibility;
+  // text-rendering: geometricPrecision;
+  // font-smooth: always;
+  // font-smoothing: antialiased;
+  // -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -webkit-font-smoothing: subpixel-antialiased;
-  text-rendering: optimizeLegibility;
 }
 .program-info.primary-darkest h3 {
   color: $primary-alt-light;
