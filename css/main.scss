@@ -239,6 +239,15 @@ Typography
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
 }
+.legibility {
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
 .usa-site-header p {
   font-size: 11px;
 }
@@ -328,6 +337,20 @@ h2, .hero p {
   display: block;
   margin-top: 4em;
   color: $secondary-darkest;
+}
+nav.links {
+  padding: 60px 20px 0 20px;
+  margin-top: 120px;
+  position: relative;
+}
+nav.links:before {
+  content: "";
+  background-color: $primary-alt-light;
+  position: absolute;
+  top: 0;
+  left: 190px;
+  height: 1px;
+  width: 60px;
 }
 #our-work .program-info ol {
   margin-left: 34px;
