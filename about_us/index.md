@@ -30,6 +30,6 @@ We have in-house data scientists, project managers, researchers, and engineers. 
 
 ### Job opportunities
 
-We’re a 150-person organization dedicated to helping government ask questions and get results --- all using data.
+We’re a 200-person organization dedicated to helping government ask questions and get results --- all using data.
 
 Our mission demands data-savvy people. We’re looking for people who speak R, Python, and D3. Who dream in Databricks, Spark, and AWS. Who believe better data insights can lead to better public services.
