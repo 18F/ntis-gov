@@ -311,20 +311,23 @@ h2, .hero p {
 .case-studies section h3 {
   min-height: 5em;
   align-self: flex-start;
-  font: 600 1.5em/1.325 $sans-serif;
+  font: 400 1.5em/1.325 $sans-serif;
   color: $gray-warm-dark;
   padding-bottom: .5em;
   margin-bottom: 1em;
   border-bottom: 1px solid $gray-warm-dark;
   -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+
 }
 .case-studies section p {
-  font: 400 .8em/1.625 $sans-serif;
+  font: 300 .8em/1.625 $sans-serif;
   margin-bottom: 1.5em;
   min-height: 4em;
   align-self: flex-start;
   word-wrap: break-word;
   padding-right: 20px;
+  -webkit-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
 .case-studies section p.eyebrow {
