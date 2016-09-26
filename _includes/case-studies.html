@@ -6,11 +6,12 @@
         <p class="eyebrow">Case study</p>
         <h3>{{ case.case-title }}</h3>
         <p class="eyebrow">Challenge</p>
-        <p>
-          {{ case.case-challenge }}
-        </p>
+
+        {{ case.case-challenge | markdownify }}
+
         <p class="eyebrow">Solution</p>
-        {{ case.content }}
+
+        {{ case.content | markdownify }}
       </section>
     {% endfor %}
   </div>
