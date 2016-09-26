@@ -5,17 +5,29 @@
 Variables: Typography
 --------------------------------*/
 $sans-serif: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$serif: 'Cormorant Garamond', Georgia, serif;
+$serif: 'Cormorant Garamond', 'Times New Roman', Times, serif;
 
 /* ------------------------------
 Variables: Colors
 --------------------------------*/
+$base: #212121;
 $primary: #0071bc;
 $primary-alt: #02bfe7;  // bright blue
 $primary-alt-light: #9bdaf1;  // light blue
+$primary-alt-lightest: #e1f3f8;
+$primary-alt-dark: #00a6d2;
+$primary-darker: #205493;
 $primary-darkest: #112e51;  // dark blue
+$primary-alt-darkest: #046b99;
 $secondary-dark: #cd2026;   // red
+$secondary-darkest: #981b1e;
+$gray-warm-dark: #494440;
 $gray-cool-light: #dce4ef;
+$gray-warm-light: #e4e2e0;
+$gray-warm-lightest: #eee;
+$gray-light: #aeb0b5;
+$gold-lighter: #fad980;
+$gold-lightest: #fff1d2;
 
 /* ------------------------------
 Base styles
@@ -25,14 +37,8 @@ Base styles
 }
 body {
   font-family: $sans-serif;
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -moz-font-feature-settings: "liga", "dlig";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig";
 }
-body, h1, h2, h3, h4, h5, p, ul, li {
+body, h1, h2, h3, h4, h5, p, ul, ol, li {
   margin: 0;
   padding: 0;
 }
@@ -45,18 +51,7 @@ h2 {
   line-height: 1.25;
 }
 h3 {
-  color: $primary-alt-light;
-  font-size: .75em;
-  font-weight: 400;
-  line-height: 2;
-  max-width: 200px;
-  display: block;
-  margin-top: 120px;
-  margin-bottom: 60px;
-  padding-top: 20px;
-  position: relative;
-  letter-spacing: .0825em;
-  text-transform: uppercase;
+
 }
 p {
   font-size: .875em;
@@ -110,7 +105,30 @@ Layout
 .container-fluid {
   width: 100%;
   height: auto;
+  background-color: #fff;
 }
+.gray-warm-dark {
+  background-color: $gray-warm-dark;
+}
+.gray-warm-light {
+  background-color: $gray-warm-light;
+}
+.gray-warm-lightest {
+  background-color: $gray-warm-lightest;
+}
+.gray-cool-light {
+  background-color: $gray-cool-light;
+}
+.gray-bg {
+  background: transparent url(../images/tile-grey.png) repeat;
+}
+.primary-darkest {
+  background-color: $primary-darkest;
+}
+.primary-alt-darkest {
+  background-color: $primary-alt-darkest;
+}
+
 .container {
   margin: 0 auto;
   max-width: 960px;
@@ -140,15 +158,25 @@ Layout
   padding: 0 20px 30px 20px;
 }
 .masthead {
-  background: transparent url(../images/tile-grey.png) repeat;
+  @extend .gray-bg;
   min-height: 480px;
 }
 .program-info {
-  background-color: $primary-darkest;
   padding-bottom: 180px;
   z-index: 1;
   height: auto;
   overflow: hidden;
+}
+.case-studies {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 60px 0 120px 0;
+  height: auto;
+  overflow: hidden;
+}
+.case-studies section {
+  align-items: stretch;
+  flex-basis: 33.33%;
 }
 /* ------------------------------
 Navigation
@@ -168,9 +196,11 @@ nav ul li {
   display: flex;
   width: 150px;
   margin-left: 10px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
 }
 nav ul li a {
-  font-size: 13px;
+  font-size: .75em;
   width: 150px;
   height: 30px;
   color: #fff;
@@ -185,7 +215,6 @@ nav ul li a:hover {
 }
 nav ul li a.active {
   border-bottom: 3px solid #fff;
-  // background-color: rgba(255, 255, 255, .2);
   color: #fff;
 }
 nav ul li:first-child {
@@ -202,6 +231,14 @@ nav ul li:first-child a img {
 /* ------------------------------
 Typography
 --------------------------------*/
+.ligature {
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
 .usa-site-header p {
   font-size: 11px;
 }
@@ -213,17 +250,31 @@ h2, .hero p {
   display: inline;
   background-color: rgba(255, 255, 255, .6);
 }
-.program-info p, .program-info ul li {
-  font: 500 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
+.program-info p, .program-info ul li, .program-info ol li {
+  font: 300 1.875em/1.2 $serif;  // font: 30px/36px 'Cormorant Garamond', Georgia, serif;
   color: #fff;
   max-width: 640px;
   margin-left: 170px;
   padding-bottom: 30px;
-  // -webkit-font-smoothing: antialiased;
-  // text-rendering: optimizeLegibility;
 }
-.program-info h3 {
+.program-info p, .program-info ul li {
+  text-rendering: optimizeLegibility;
+  // text-rendering: geometricPrecision;
+  // font-smooth: always;
+  // font-smoothing: antialiased;
+  // -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.program-info.primary-darkest h3 {
   color: $primary-alt-light;
+  font-size: .75em;
+  font-weight: 400;
+  line-height: 2;
+  max-width: 200px;
+  position: relative;
+  letter-spacing: .0825em;
+  text-transform: uppercase;
   font-weight: 400;
   max-width: 200px;
   display: block;
@@ -247,6 +298,77 @@ h2, .hero p {
   margin: 15px 0 15px 170px;
   color: $gray-cool-light;
 }
+// Styles for 3-col case studies
+.case-studies section h3 {
+  min-height: 5em;
+  align-self: flex-start;
+  font: 600 1.5em/1.325 $sans-serif;
+  color: $gray-warm-dark;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid $gray-warm-dark;
+  -webkit-font-smoothing: antialiased;
+}
+.case-studies section p {
+  font: 400 .8em/1.625 $sans-serif;
+  margin-bottom: 1.5em;
+  min-height: 4em;
+  align-self: flex-start;
+  word-wrap: break-word;
+  padding-right: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+.case-studies section p.eyebrow {
+  text-transform: uppercase;
+  font-size: .5em;
+  font-weight: 600;
+  letter-spacing: .05em;
+  margin-bottom: .625em;
+  min-height: 2em;
+  display: block;
+  margin-top: 4em;
+  color: $secondary-darkest;
+}
+#our-work .program-info ol {
+  margin-left: 34px;
+}
+// Styles for 1-col case studies
+// .program-info.primary-alt-darkest section h3 {
+//   font-size: 1.625em;
+//   font-weight: 300;
+//   margin: 150px 0 60px 170px;
+//   color: #fff;
+//   position: relative;
+//   padding-top: 30px;
+//   -webkit-font-smoothing: antialiased;
+//   text-rendering: optimizeLegibility;
+// }
+// .program-info.primary-alt-darkest section h3:before {
+//   content: "";
+//   background-color: $primary-alt-light;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 2px;
+//   width: 60px;
+// }
+// .program-info.primary-alt-darkest section h3 span.sm-subhead {
+//   display: block;
+//   color: $primary-alt-light;
+// }
+// .program-info.primary-alt-darkest section p.eyebrow {
+//   font-family: $sans-serif;
+//   text-transform: uppercase;
+//   font-size: .625em;
+//   font-weight: 600;
+//   letter-spacing: .1em;
+//   padding: 15px 0;
+//   color: $primary-alt-light;
+// }
+// .program-info.primary-alt-darkest section a {
+//   color: $gold-lighter;
+//   border-bottom: 1px solid $gold-lighter;
+// }
 address p {
   margin-bottom: 12px;
 }
@@ -263,8 +385,7 @@ Components
   padding: 1rem 1.5rem;
   position: absolute;
   top: -4.2rem;
-  transition: all 0.2s ease-in-out;
-  // z-index: 100;
+  // transition: all 0.2s ease-in-out;
 }
 .skipnav:focus {
   background: #ffffff;
@@ -272,7 +393,7 @@ Components
   outline: 0;
   position: absolute;
   top: 0;
-  transition: all 0.2s ease-in-out;
+  // transition: all 0.2s ease-in-out;
 }
 .program-info p a:hover, .program-info ul li a:hover {
   border-bottom: 1px dotted $primary-alt;
@@ -290,7 +411,7 @@ Components
   background: url(../images/pdf.svg) right center no-repeat;
 }
 .usa-site-header a {
-  color: $primary;
+  color: $primary-alt-dark;
 }
 .usa-site-header a:hover {
   border-bottom: 1px solid $primary;
@@ -305,6 +426,15 @@ Components
 }
 .program-info a:hover.button {
   color: #fff;
+}
+// Styles for 3-col case studies
+.case-studies a {
+  color: $primary-alt-darkest;
+  font-weight: 500;
+  border-bottom: 1px dotted $primary-alt-darkest;
+}
+.case-studies a:hover {
+  border-bottom: 1px solid $primary-alt-darkest;
 }
 address a.social-icon {
   display: inline-block;
@@ -343,7 +473,6 @@ Device-specific
   // }
   #homepage, #about-us, #our-work, #partner  {
     background: url(../images/bridge-bg-sm.jpg) no-repeat center 0 fixed;
-    // background-size: auto;
   }
   nav, section, footer, .container {
     width: calc(100% - 20px);
@@ -361,6 +490,49 @@ Device-specific
     float: none;
     padding-left: 10px;
   }
+  .case-studies {
+    display: block;
+    padding-left: 10px;
+  }
+  .case-studies section {
+    width: 100%;
+  }
+  .case-studies section p {
+    font-size: 1.125em;
+    // font: 400 .8em/1.625 $sans-serif;
+    // margin-bottom: 1.5em;
+    // min-height: 4em;
+    // align-self: flex-start;
+    // word-wrap: break-word;
+    // padding-right: 20px;
+    // -webkit-font-smoothing: antialiased;
+  }
+  .case-studies section p.eyebrow {
+    margin-top: 0;
+    // text-transform: uppercase;
+    // font-size: .5em;
+    // font-weight: 600;
+    // letter-spacing: .05em;
+    // margin-bottom: .625em;
+    // min-height: 2em;
+    // display: block;
+    // margin-top: 4em;
+    // color: $secondary-darkest;
+  }
+  .case-studies section p:first-child {
+    border-top: 1px solid $gray-warm-dark;
+    padding-top: 6em;
+  }
+  .case-studies section p:last-child {
+    padding-bottom: 3em;
+  }
+  .case-studies section:first-child p {
+    border-top: none;
+  }
+  .case-studies section h3 {
+    min-height: auto;
+    border-bottom: none;
+  }
   nav ul, nav ul li, nav ul li a {
     width: 100%;
   }
@@ -373,7 +545,6 @@ Device-specific
   }
   nav ul li a {
     min-height: 40px;
-    // padding-left: 20px;
     padding: 10px 0 0 20px;
     background: none;
   }
@@ -388,18 +559,68 @@ Device-specific
   .program-info h3 {
     margin-left: 10px;
   }
-  .program-info p, .program-info ul li, .program-info h4 {
+  .program-info p, .program-info ul li, .program-info ol li, .program-info h4, .program-info.primary-alt-darkest section h3 {
     margin-left: 10px;
     width: calc(100% - 20px);
   }
-  .program-info p, .program-info ul li {
-    font-size: 1.5em;
+  .program-info p, .program-info ul li, .program-info ol li {
     font-weight: 500;
-    letter-spacing: .02em;
+    // font: 300 1.875em/1.2 $serif;
+    letter-spacing: normal;
     hyphens: auto;
   }
   .program-info a.button {
     margin-left: 10px;
+  }
+}
+@media (min-width: 800px) { // styles for enhanced process
+  #our-work .program-info ol {
+    display: flex;
+    flex-direction: row;
+    counter-reset: li;
+    list-style:none;
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+  #our-work .program-info ol > li {
+    align-items: stretch;
+    width: 20%;
+    font: 300 .7em/1.5 $sans-serif;
+    margin: 0;
+    padding: 100px 10px 0 10px;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    position: relative;
+    word-wrap: break-word;
+  }
+  #our-work .program-info ol li:first-child {
+    padding-left: 0;
+  }
+  #our-work .program-info ol li:last-child {
+    padding-right: 0;
+  }
+  #our-work .program-info ol li:before {
+    position: absolute;
+    display: block;
+    content: counter(li);
+    counter-increment: li;
+    top: 20px;
+    left: 50px;
+    // font-size: 1.5em;
+    font: 700 1.5em/1.5 'Roboto Mono', Arial, monospace;
+    border: 1px solid $primary-alt;
+    color: $primary-alt;
+    // background-color: $primary-darker;
+    width: 29px;
+    height: 38px;
+    border-radius: 26px;
+    padding-left: 18px;
+    padding-top: 8px;
   }
 }
 @media (max-width: 960px) {
@@ -407,9 +628,3 @@ Device-specific
     margin-left: 12px;
   }
 }
-
-// @media (min-width: 2561px) {
-//   #homepage, #about-us, #our-work, #partner {
-//     background-size: cover;
-//   }
-// }

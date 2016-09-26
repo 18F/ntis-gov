@@ -1,0 +1,17 @@
+
+<div class="container-fluid gray-warm-lightest">
+  <div class="container case-studies">
+    {% for case in site.posts %}
+      <section>
+        <p class="eyebrow">Case study</p>
+        <h3>{{ case.case-title }}</h3>
+        <p class="eyebrow">Challenge</p>
+        <p>
+          {{ case.case-challenge }}
+        </p>
+        <p class="eyebrow">Solution</p>
+        {{ case.content }}
+      </section>
+    {% endfor %}
+  </div>
+</div>
