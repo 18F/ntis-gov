@@ -8,7 +8,7 @@ summary: Transforming data into valuable public services
 
 <h3>About us</h3>
 
-We're part of &ldquo;America’s Data Agency,&rdquo; the Department of Commerce.
+We're part of &ldquo;America’s Data Agency,&rdquo; the U.S. Department of Commerce.
 
 We help federal agencies make better decisions about data, with data. We provide the support and structure that helps our partners securely store, analyze, sort, and aggregate data in new ways. We use our private-sector partners' knowledge to create new ways of using data to solve problems. Our Joint Venture program works side-by-side with universities, nonprofits and industry professionals --- together, they can experiment with data science technologies before they’re available in the marketplace.
 
@@ -32,4 +32,6 @@ We have in-house data scientists, project managers, researchers, and engineers. 
 
 We’re a 200-person organization dedicated to helping government ask questions and get results --- all using data.
 
-Our mission demands data-savvy people. We’re looking for people who speak R, Python, and D3. Who dream in Databricks, Spark, and AWS. Who believe better data insights can lead to better public services.
+Our mission demands data-savvy people.  We’re looking for people who speak R, Python, and D3. Who dream in Databricks, Spark, and AWS. Who believe better data insights can lead to better public services.
+
+We don't have any open positions right now, but will soon!  In the meantime, check out other opportunities at the [U.S. Department of Commerce](https://www.usajobs.gov/JobSearch/Search/GetResults?organizationid=CM).
