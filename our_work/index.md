@@ -11,7 +11,7 @@ With the support of industry experts, we help federal agencies manage data and c
 
 The [Federal Big Data Research and Development Strategic Plan](https://www.whitehouse.gov/sites/default/files/microsites/ostp/NSTC/bigdatardstrategicplan-nitrd_final-051916.pdf) outlines a vision where cooperation between the public and private sectors leads to innovation in government. It envisions real-time, diverse datasets being used to reduce traffic congestion, increase energy efficiency, and reduce fraud and waste for the American public.
 
-Our projects involve just the type of public-private cooperation that the strategic plan imagines --- improving access, discoverability, and usability of government research and data. We can build a new products and services, working to improve them continuously, until they meet project needs.
+Our projects involve just the type of public-private cooperation that the strategic plan imagines --- improving access, discoverability, and usability of government research and data. We can build new products and services, working to improve them continuously, until they meet project needs.
 
 
 ### Our process
